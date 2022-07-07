@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Видео отзывы</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="other-page">
@@ -14,7 +15,7 @@
             <nav>
                 <div class="header-logo"><a href="/"><img src="assets/img/logo.svg" alt="logo"></a></div>
                 <ul class="header-menu">
-                    <li class="header-menu__item"><a href="#" class="header-menu__link active">Главная</a></li>
+                    <li class="header-menu__item"><a href="/" class="header-menu__link active">Главная</a></li>
                     <li class="header-menu__item dropdown"><a href="#" class="header-menu__link">Услуги и цены <img src="assets/img/drop.svg"></a></li>
                         <ul class="header-menu__drop">
                             <li class="header-menu__dropitem"><a href="#">Создание сайтов</a></li>
@@ -22,7 +23,7 @@
                             <li class="header-menu__dropitem"><a href="#">Бизнес с нуля под ключ</a></li>
                             <li class="header-menu__dropitem"><a href="#">Дополнительные услуги</a></li>  
                         </ul>
-                    <li class="header-menu__item"><a href="#" class="header-menu__link">Живые отзывы</a></li>
+                    <li class="header-menu__item"><a href="reviews.html" class="header-menu__link">Живые отзывы</a></li>
                     <li class="header-menu__item"><a href="#" class="header-menu__link">О компании</a></li>
                     <li class="header-menu__item"><a href="#" class="header-menu__link">Ответы на вопросы</a></li>
                     <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
@@ -35,11 +36,99 @@
                 <div class="reviews-leftbar">
                     <p>Создание готового бизнеса с нуля, под ключ</p>
                     <p class="active">Услуги для уже действующего бизнеса</p>
-                    <button class="riviews-button">Оставить отзыв</button>
+                    <button class="reviews-button">Оставить отзыв</button>
                 </div>
-                <div class="reviews-rightbar"></div>
+                <div class="reviews-rightbar">
+                    <div class="riviews-box">
+                        <button class="reviews-box__btn video active" id='#video'>Видео</button>
+                        <button class="reviews-box__btn audio" id="#audio">Аудио</button>
+                        <!-- Slider main container -->
+                        <div class="swiper video-box">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                  <video controls src="assets/video/video.mp4" poster="assets/img/posterimage.jpg" width="720">
+                                    Простите, но ваш браузер не поддерживает встроенные видео.
+                                    Попробуйте скачать видео <a href="assets/video/video.mp4">по этой ссылке</a>
+                                    и открыть его на своём устройстве.
+                                  </video>                                  
+                                </div>
+                                <div class="swiper-slide">
+                                    <video controls src="assets/video/video.mp4" poster="assets/img/posterimage.jpg" width="720">
+                                      Простите, но ваш браузер не поддерживает встроенные видео.
+                                      Попробуйте скачать видео <a href="assets/video/video.mp4">по этой ссылке</a>
+                                      и открыть его на своём устройстве.
+                                    </video>                                  
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="swiper audio-box">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide audio-container">
+                                    <img src="assets/img/audio01.jpg" alt="Фотография">
+                                    <p class="audio-name">Виталий</p>
+                                    <p class="audio-company">Название компании</p>
+                                    <audio class="audio-player" controls src="assets/audio/audio01.wav">
+                                        <p>Ваш браузер не поддерживает HTML5 аудио. Вот взамен
+                                        <a href="assets/audio/audio01.wav">ссылка на аудио</a></p>
+                                    </audio>
+                                </div>
+                                <div class="swiper-slide audio-container">
+                                    <img src="assets/img/audio01.jpg" alt="Фотография">
+                                    <p class="audio-name">Виталий</p>
+                                    <p class="audio-company">Название компании</p>
+                                    <audio class="audio-player" controls src="assets/audio/audio01.wav">
+                                        <p>Ваш браузер не поддерживает HTML5 аудио. Вот взамен
+                                        <a href="assets/audio/audio01.wav">ссылка на аудио</a></p>
+                                    </audio>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__form">
+                            <form action="">
+                                <input class="reviews__input" type="text" placeholder="Ваше имя">
+                                <input class="reviews__input" type="text" placeholder="Название компании">
+                                <input class="reviews__input" type="text" placeholder="Сайт компании">
+                                <input class="reviews__input" type="text" placeholder="Комментарий">
+                                <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                                <label for="input__file" class="input__file-button">
+                                   <span class="input__file-button-text">Прикрепить файл</span>
+                                </label>
+                                <button class="reviews__submit" type="submit">Отправить отзыв</button>
+                            </form>
+                        </div>
+                        <div class="reviews__nav">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+<script src="/assets/js/main.js"></script>
+<!-- Initialize Swiper -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+//   direction: 'vertical',
+//   loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
 </body>
 </html>

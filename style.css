@@ -25,9 +25,12 @@
 a {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 * {
   box-sizing: border-box;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 body {
   background: #0f0a3f;
@@ -36,6 +39,7 @@ body {
 .index {
   background-image: url(assets/img/background.png);
   overflow: hidden;
+  background-size: cover;
 }
 .content {
   max-width: 1300px;
@@ -84,7 +88,7 @@ nav {
 .header-menu__link:hover {
   color: #00b2e8;
 }
-.active {
+body .active {
   color: #00b2e8;
 }
 .header-menu__link img {
@@ -105,7 +109,7 @@ nav {
   border-radius: 7px;
   min-width: 280px;
   padding: 2px 0 10px 0;
-  left: 265px;
+  margin-left: 100px;
   top: 69px;
   transform: translateY(-240px);
   transition: transform 0s;
@@ -260,12 +264,13 @@ nav {
 /* Контент других страниц */
 
 .other-page {
-  background-image: url(/assets/img/backotherpage.png);
+  background-image: url(assets/img/backotherpage.png);
   background-size: cover;
 }
 .reviews {
-  padding-top: 93px;
+  padding-top: 85px;
   display: flex;
+  gap: 100px;
 }
 .reviews-leftbar {
   max-width: 410px;
@@ -285,7 +290,7 @@ nav {
 .reviews-leftbar .active {
   color: #00b2e8;
 }
-.riviews-button {
+.reviews-button {
   font-family: "Golos";
   font-style: normal;
   font-weight: 500;
@@ -297,7 +302,167 @@ nav {
   background: #00b2e8;
   border-radius: 7px;
   color: #ffffff;
-  padding: 27px 70px 25px 70px;
+  padding: 28px 72px 28px 72px;
   margin-top: 12px;
   cursor: pointer;
+  border: none;
+}
+.reviews-button__active {
+  opacity: 0.5;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: inherit;
+  padding: 29px 71px 25px 71px;
+}
+.reviews-rightbar {
+  min-width: 720px;
+  position: relative;
+  max-width: 720px;
+}
+.reviews-rightbar img {
+  max-width: 100%;
+}
+.reviews-box__btn {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  color: #ffffff;
+  padding: 11px 47px 13px 47px;
+  background: rgba(255, 255, 255, 0.054);
+  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(69.6667px);
+  border-radius: 7px 7px 0px 0px;
+  border: none;
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  max-width: 720px;
+  max-height: 405px;
+  border-radius: 0px 7px 7px 7px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.054);
+  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(69.6667px);
+  border-radius: 50px;
+  z-index: 10;
+}
+.swiper-button-prev {
+  left: -70px;
+}
+.swiper-button-next {
+  right: -70px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.audio-box {
+  display: none;
+}
+.reviews__form {
+  display: none;
+  background: rgba(255, 255, 255, 0.054);
+  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(69.6667px);
+  border-radius: 0px 7px 7px 7px;
+  padding: 51px 50px 56px 50px;
+}
+.reviews__input {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #ffffff;
+  opacity: 1;
+  display: inline-block;
+  width: 100%;
+  min-width: 620px;
+  background: transparent;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
+  padding: 16px 30px 15px 30px;
+  margin-bottom: 12px;
+}
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.input__file-button {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #ffffff;
+  opacity: 0.5;
+  display: inline-block;
+  padding: 15px 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 7px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.reviews__input:plascehloder {
+  opacity: 0.7;
+}
+.reviews__submit {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  text-align: center;
+  background: #00b2e8;
+  border-radius: 7px;
+  color: #ffffff;
+  padding: 16px 13px;
+  cursor: pointer;
+  border: none;
+}
+.audio-container {
+  background: rgba(255, 255, 255, 0.054);
+  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(69.6667px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  min-height: 405px;
+}
+.audio-container p {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  color: #ffffff;
+  margin: 10px 0 0 0;
+}
+.audio-container p:nth-child(3) {
+  margin-bottom: 15px;
+}
+.audio-player {
+  width: 100%;
+  padding: 0 135px;
 }
