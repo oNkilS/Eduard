@@ -30,7 +30,6 @@ button {
 }
 * {
   box-sizing: border-box;
-  transition: all 0.2s ease;
 }
 body {
   background: #0f0a3f;
