@@ -101,10 +101,9 @@ body .active {
   visibility: hidden;
   list-style: none;
   position: absolute;
-  background: rgba(255, 255, 255, 0.054);
+  background: #38316c;
   box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
     inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
-  backdrop-filter: blur(69.6667px);
   border-radius: 7px;
   min-width: 280px;
   padding: 2px 0 10px 0;
@@ -252,11 +251,12 @@ body .active {
   position: relative;
   width: 70vh;
   background-image: url(assets/img/Eduard.png);
-  height: 81vh;
+  height: 89vh;
   position: absolute;
-  background-position: center;
+  background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: -75px;
 }
 /* контент главной конец */
 
@@ -285,6 +285,7 @@ body .active {
   color: #ffffff;
   margin: 0;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 .reviews-leftbar .active {
   color: #00b2e8;
@@ -344,8 +345,8 @@ body .active {
   max-height: 405px;
   border-radius: 0px 7px 7px 7px;
 }
-.swiper-button-prev,
-.swiper-button-next {
+.owl-prev,
+.owl-next {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -355,18 +356,23 @@ body .active {
   backdrop-filter: blur(69.6667px);
   border-radius: 50px;
   z-index: 10;
+  border-radius: 50px !important;
+  top: 160px;
 }
-.swiper-button-prev {
+.owl-prev {
   left: -70px;
 }
-.swiper-button-next {
+.owl-next {
   right: -70px;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
+.owl-prev img,
+.owl-next img {
+  top: 3px;
+  left: 0px;
+  position: relative;
+}
+.owl-carousel .owl-item img {
+  width: auto;
 }
 .audio-box {
   display: none;
@@ -467,4 +473,7 @@ body .active {
 }
 .reviews svg {
   margin-top: 70px;
+}
+.new-business {
+  display: none;
 }
