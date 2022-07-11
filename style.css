@@ -115,13 +115,13 @@ body .active {
 }
 .dropdown:hover + .header-menu__drop {
   opacity: 1;
-  z-index: 1;
+  z-index: 100;
   visibility: visible;
   transform: translateY(0px);
 }
 .header-menu__drop:hover {
   opacity: 1;
-  z-index: 1;
+  z-index: 100;
   visibility: visible;
   transform: translateY(0px);
 }
@@ -222,6 +222,9 @@ body .active {
   left: 0;
   top: calc(50% - 15px);
 }
+.main-list__item:nth-child(1)::before {
+  top: calc(50% - 20px);
+}
 .main-modal__btn {
   margin-top: 54px;
   background: #eb4225;
@@ -261,7 +264,7 @@ body .active {
 /* контент главной конец */
 
 /* Контент других страниц */
-
+/* Живые отзывы  */
 .other-page {
   background-image: url(assets/img/backotherpage.png);
 }
@@ -338,7 +341,7 @@ body .active {
   border: none;
   position: relative;
 }
-.swiper {
+.item {
   width: 100%;
   max-width: 720px;
   max-height: 405px;
@@ -475,4 +478,351 @@ body .active {
 }
 .new-business {
   display: none;
+}
+/* О компании  */
+.other-page-reviews {
+  background-image: url(assets/img/bigfon.png);
+  overflow-x: hidden;
+}
+@media (min-width: 1441px) {
+  .other-page-reviews {
+    background-image: url(assets/img/bigfon1920.png);
+  }
+}
+@media (min-width: 1921px) {
+  .other-page-reviews {
+    background-image: url(assets/img/bigfon2560.png);
+  }
+  .index,
+  .other-page {
+    background-size: cover;
+  }
+}
+.director {
+  background: rgba(255, 255, 255, 0.054);
+  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(69.6667px);
+  border-radius: 7px;
+  width: 100%;
+  padding: 65px 50px;
+  margin-top: 100px;
+  max-height: 600px;
+  background-image: url("assets/img/director.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.director__title {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.director__discription {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.director-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 318px;
+  max-width: 700px;
+}
+.director-list__item {
+  list-style: none;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  min-width: 353px;
+}
+.director-list__item img {
+  padding-right: 23px;
+  width: 56px;
+}
+.company {
+  margin-top: 100px;
+}
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.company__title {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.numbers__top {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 140px;
+  text-transform: uppercase;
+  color: #00b2e8;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+.numbers__bottom {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.people {
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.054);
+  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(69.6667px);
+  border-radius: 7px;
+  padding: 65px 50px;
+}
+.people h2 {
+  text-align: center;
+}
+.people-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+.people__item {
+  width: 370px;
+}
+.people__item img {
+  width: 370px;
+  height: 504px;
+  border-radius: 7px;
+}
+.people__item h3 {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 20px 0 12px 0;
+}
+.people__item p {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0;
+}
+.garantii {
+  margin-top: 110px;
+  position: relative;
+}
+.garantii::after {
+  content: "";
+  background-image: url(assets/img/garantiya.svg);
+  background-repeat: no-repeat;
+  width: 390px;
+  height: 420px;
+  position: absolute;
+  top: -200px;
+  right: -185px;
+}
+.garantii-row {
+  display: flex;
+  gap: 48px;
+}
+.company__title {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.garantii__top {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #00b2e8;
+  margin-bottom: 12px;
+}
+.garantii__bottom {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+.awards {
+  margin-top: 90px;
+  padding: 65px 39px;
+  background: rgba(255, 255, 255, 0.054);
+  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(69.6667px);
+  border-radius: 7px;
+}
+.awards__title {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.awards .popup-gallery {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+.awards .popup-gallery img {
+  border-radius: 7px;
+  transition: all 0.5s ease-out;
+}
+.awards .popup-gallery img:hover {
+  transform: scale(1.1);
+}
+.partners {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.partners__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.partners__discription {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.partners-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 33px;
+}
+.partners-row svg:hover {
+  fill: #00b2e8;
+  cursor: pointer;
+}
+.partners__item {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.item__discription {
+  opacity: 0;
+  background: #20284d;
+  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+  backdrop-filter: blur(69.6667px);
+  border-radius: 7px;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  z-index: 100;
+  width: 420px;
+  padding: 0px 5px;
+  margin-top: 20px;
+  transform: translateX(-1000px);
+  transition: opacity 0.3s ease-out;
+}
+.partners__item:nth-child(9) > .item__discription {
+  display: flex;
+  flex-direction: column-reverse;
+  bottom: 5px;
+  top: inherit;
+}
+.partners__item:hover > .item__discription {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.item__discription p {
+  padding: 0 20px 32px 15px;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-top: -30px;
+}
+.item__discription img {
+  margin-top: -20px;
+  width: 300px;
+  height: 150px;
+}
+.partners__item:nth-child(9) > .item__discription p {
+  margin-top: 0px;
+  padding: 42px 20px 0 20px;
+}
+.partners__item:nth-child(9) > .item__discription img {
+  margin-left: -50px;
 }
