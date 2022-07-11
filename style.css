@@ -38,7 +38,7 @@ body {
 .index {
   background-image: url(assets/img/background.png);
   overflow: hidden;
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 .content {
   max-width: 1300px;
@@ -264,7 +264,6 @@ body .active {
 
 .other-page {
   background-image: url(assets/img/backotherpage.png);
-  background-size: cover;
 }
 .reviews {
   padding-top: 85px;
