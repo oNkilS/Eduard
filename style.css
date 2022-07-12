@@ -484,9 +484,16 @@ body .active {
   background-image: url(assets/img/bigfon.png);
   overflow-x: hidden;
 }
+.contact-page {
+  background-image: url(assets/img/bgcontact1440.jpg);
+  position: relative;
+}
 @media (min-width: 1441px) {
   .other-page-reviews {
     background-image: url(assets/img/bigfon1920.png);
+  }
+  .contact-page {
+    background-image: url(assets/img/bgcontact1920.jpg);
   }
 }
 @media (min-width: 1921px) {
@@ -494,7 +501,8 @@ body .active {
     background-image: url(assets/img/bigfon2560.png);
   }
   .index,
-  .other-page {
+  .other-page,
+  .contact-page {
     background-size: cover;
   }
 }
@@ -825,4 +833,64 @@ body .active {
 }
 .partners__item:nth-child(9) > .item__discription img {
   margin-left: -50px;
+}
+/* контакты */
+.contact-page .content {
+  position: relative;
+}
+.contact__earth {
+  width: 450px;
+  height: 450px;
+  top: 194px;
+  right: 0;
+  display: block;
+  position: absolute;
+  transition: all 5s ease;
+}
+.contact__earth:hover {
+  transform: scale(1.2) rotate(359deg);
+}
+.contact {
+  margin-top: 105px;
+}
+.contact__title {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 28px 0;
+  max-width: 750px;
+}
+.contact-list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 180px;
+  max-width: 530px;
+}
+.contact-list__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  min-height: 59px;
+  min-width: 280px;
+}
+.contact-list__item img {
+  margin-right: 27px;
+  width: 29px;
+}
+.contact-list__item a {
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  display: flex;
 }
