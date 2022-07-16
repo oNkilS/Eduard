@@ -1,3 +1,5 @@
+$(function(){
+// отзывы
 $('.video').click(function() {
     $('.video-box').show();
     $('.audio-box').hide();
@@ -25,7 +27,6 @@ $('.reviews-button').click(function() {
     $('.video').removeClass('active');
     $('.reviews-button').addClass('reviews-button__active');
 });
-
 $('.new__btn').click(function() {
     $('.new-business').show();
     $('.active-business').hide();
@@ -37,4 +38,23 @@ $('.active__btn').click(function() {
     $('.new-business').hide();
     $('.active__btn').addClass('active');
     $('.new__btn').removeClass('active');
+});
+// Скролл шапки
+    let header = $('header');
+    let hederHeight = header.height(); // вычисляем высоту шапки
+     
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 1) {
+       header.addClass('fixed');
+       $('body').css({
+          'paddingTop': hederHeight+'px' // делаем отступ у body, равный высоте шапки
+       });
+      } else {
+       header.removeClass('fixed');
+       $('body').css({
+        'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+       })
+      }
+    });
+
 });
