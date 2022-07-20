@@ -664,6 +664,7 @@ body .active {
   color: #00b2e8;
   opacity: 0.6;
   margin-bottom: 10px;
+  display: inline-block;
 }
 .numbers__bottom {
   font-family: "Golos";
