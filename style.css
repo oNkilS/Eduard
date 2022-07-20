@@ -434,10 +434,6 @@ body .active {
   right: 20px;
   z-index: -1;
 }
-.active-box {
-  opacity: 1;
-  z-index: 1;
-}
 .reviews__form {
   opacity: 0;
   position: absolute;
@@ -449,6 +445,10 @@ body .active {
   backdrop-filter: blur(69.6667px);
   border-radius: 0px 7px 7px 7px;
   padding: 51px 50px 56px 50px;
+}
+.active-box {
+  opacity: 1;
+  z-index: 1;
 }
 .reviews__input {
   font-family: "Golos";
