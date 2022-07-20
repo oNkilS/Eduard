@@ -1,41 +1,41 @@
 $(function(){
 // отзывы
 $('.video').click(function() {
-    $('.video-box').show();
-    $('.audio-box').hide();
-    $('.reviews__form').hide();
+    $('.video-box').addClass('active-box');
+    $('.audio-box').removeClass('active-box');
+    $('.reviews__form').removeClass('active-box');
     $('.reviews__nav').show();
     $('.video').addClass('active');
     $('.audio').removeClass('active');
     $('.reviews-button').removeClass('reviews-button__active');
 });
 $('.audio').click(function() {
-    $('.video-box').hide();
-    $('.audio-box').show();
-    $('.reviews__form').hide();
+    $('.video-box').removeClass('active-box');
+    $('.audio-box').addClass('active-box');
+    $('.reviews__form').removeClass('active-box');
     $('.reviews__nav').show();
     $('.audio').addClass('active');
     $('.video').removeClass('active');
     $('.reviews-button').removeClass('reviews-button__active');
 });
 $('.reviews-button').click(function() {
-    $('.video-box').hide();
-    $('.audio-box').hide();
-    $('.reviews__form').show();
+    $('.video-box').removeClass('active-box');
+    $('.audio-box').removeClass('active-box');
+    $('.reviews__form').addClass('active-box');
     $('.reviews__nav').hide();
     $('.audio').removeClass('active');
     $('.video').removeClass('active');
     $('.reviews-button').addClass('reviews-button__active');
 });
 $('.new__btn').click(function() {
-    $('.new-business').show();
-    $('.active-business').hide();
+    $('.new-business').addClass('active-box');
+    $('.active-business').removeClass('active-box');
     $('.new__btn').addClass('active');
     $('.active__btn').removeClass('active');
 });
 $('.active__btn').click(function() {
-    $('.active-business').show();
-    $('.new-business').hide();
+    $('.active-business').addClass('active-box');
+    $('.new-business').removeClass('active-box');
     $('.active__btn').addClass('active');
     $('.new__btn').removeClass('active');
 });
