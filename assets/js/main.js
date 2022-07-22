@@ -39,6 +39,10 @@ $('.active__btn').click(function() {
     $('.active__btn').addClass('active');
     $('.new__btn').removeClass('active');
 });
+
+$('.reviews__title span').click(function(){
+    $('.reviews__hide').toggleClass('reviews__show')
+});
 // Скролл шапки
     let header = $('header');
     let hederHeight = header.height(); // вычисляем высоту шапки
@@ -59,56 +63,15 @@ $('.active__btn').click(function() {
 
 });
 
-// цифры о нас 
-
-
-var number = document.querySelector('.number'),
-numberTop = number.getBoundingClientRect().top,
-start = +number.innerHTML, end = +number.dataset.max;
-
-window.addEventListener('scroll', function onScroll() {
-    if(window.pageYOffset > numberTop - window.innerHeight / 1.1) {
-        this.removeEventListener('scroll', onScroll);
-        var interval = setInterval(function() {
-            number.innerHTML = ++start;
-            if(start == end) {
-                clearInterval(interval);
-            }
-        }, 100);
-    }
+// ответы на вопросы 
+$('.faq-item').click(function() {
+    $(this).toggleClass('faq__active');
 });
-
-var number1 = document.querySelector('.number1'),
-number1Top = number1.getBoundingClientRect().top,
-start1 = +number1.innerHTML, end1 = +number1.dataset.max;
-
-window.addEventListener('scroll', function onScroll() {
-    if(window.pageYOffset > number1Top - window.innerHeight / 1.1) {
-        this.removeEventListener('scroll', onScroll);
-        var interval1 = setInterval(function() {
-            number1.innerHTML = ++start1;
-            if(start1 == end1) {
-                clearInterval(interval1);
-            }
-        }, 10);
-    }
+$(document).keyup(function(e) {
+	if (e.key === "Escape" || e.keyCode === 27) {
+		$('.faq-item').removeClass('faq__active');
+	}
 });
-
-var number2 = document.querySelector('.number2'),
-number2Top = number2.getBoundingClientRect().top,
-start2 = +number2.innerHTML, end2 = +number2.dataset.max;
-
-window.addEventListener('scroll', function onScroll() {
-    if(window.pageYOffset > number2Top - window.innerHeight / 1.1) {
-        this.removeEventListener('scroll', onScroll);
-        var interval2 = setInterval(function() {
-            number2.innerHTML = ++start2;
-            if(start2 == end2) {
-                clearInterval(interval2);
-            }
-        }, 55);
-    }
-});
-
-
-
+$('.faq__close ').click(function(){
+    $('.faq-item').removeClass('faq__active');
+})

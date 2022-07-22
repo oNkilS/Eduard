@@ -30,7 +30,7 @@
                         </ul>
                     <li class="header-menu__item"><a href="reviews.html" class="header-menu__link">Живые отзывы</a></li>
                     <li class="header-menu__item"><a href="about.html" class="header-menu__link active">О компании</a></li>
-                    <li class="header-menu__item"><a href="#" class="header-menu__link">Ответы на вопросы</a></li>
+                    <li class="header-menu__item"><a href="faq.html" class="header-menu__link">Ответы на вопросы</a></li>
                     <li class="header-menu__item"><a href="contacts.html" class="header-menu__link">Контакты</a></li>
                 </ul>
                 <div class="header-callback"><a href="#">Заказать звонок</a></div>
@@ -63,11 +63,11 @@
                         <div class="numbers__bottom">Лет на рынке</div>
                     </div>
                     <div class="item">
-                        <div class="numbers__top number1" data-max="700">320</div><span class="numbers__top">+</span>
+                        <div class="numbers__top number1" data-max="200">110</div><span class="numbers__top">+</span>
                         <div class="numbers__bottom">Успешных проектов</div>
                     </div>
                     <div class="item">
-                        <div class="numbers__top number2" data-max="97">10</div><span class="numbers__top">%</span>
+                        <div class="numbers__top number2" data-max="97">70</div><span class="numbers__top">%</span>
                         <div class="numbers__bottom">Довольных клиентов</div>
                     </div>
                 </div>
@@ -273,6 +273,56 @@ $(document).ready(function() {
         midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 
 	});
+});
+</script>
+<!-- цифры -->
+<script>
+    var number = document.querySelector('.number'),
+numberTop = number.getBoundingClientRect().top,
+start = +number.innerHTML, end = +number.dataset.max;
+
+window.addEventListener('scroll', function onScroll() {
+    if(window.pageYOffset > numberTop - window.innerHeight / 1.1) {
+        this.removeEventListener('scroll', onScroll);
+        var interval = setInterval(function() {
+            number.innerHTML = ++start;
+            if(start == end) {
+                clearInterval(interval);
+            }
+        }, 100);
+    }
+});
+
+var number1 = document.querySelector('.number1'),
+number1Top = number1.getBoundingClientRect().top,
+start1 = +number1.innerHTML, end1 = +number1.dataset.max;
+
+window.addEventListener('scroll', function onScroll() {
+    if(window.pageYOffset > number1Top - window.innerHeight / 1.1) {
+        this.removeEventListener('scroll', onScroll);
+        var interval1 = setInterval(function() {
+            number1.innerHTML = ++start1;
+            if(start1 == end1) {
+                clearInterval(interval1);
+            }
+        }, 10);
+    }
+});
+
+var number2 = document.querySelector('.number2'),
+number2Top = number2.getBoundingClientRect().top,
+start2 = +number2.innerHTML, end2 = +number2.dataset.max;
+
+window.addEventListener('scroll', function onScroll() {
+    if(window.pageYOffset > number2Top - window.innerHeight / 1.1) {
+        this.removeEventListener('scroll', onScroll);
+        var interval2 = setInterval(function() {
+            number2.innerHTML = ++start2;
+            if(start2 == end2) {
+                clearInterval(interval2);
+            }
+        }, 55);
+    }
 });
 </script>
 </body>
