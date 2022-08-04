@@ -151,13 +151,13 @@
   .partners__item:nth-child(4) > .item__discription,
   .partners__item:nth-child(8) > .item__discription,
   .partners__item:nth-child(12) > .item__discription {
-    left: -44px;
+    left: -110px;
   }
   .partners__item:nth-child(4) .item__discription img,
   .partners__item:nth-child(8) .item__discription img,
   .partners__item:nth-child(12) .item__discription img {
     position: relative;
-    left: 40px;
+    left: 80px;
   }
 }
 @media (max-width: 1239px) {
