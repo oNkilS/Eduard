@@ -55,6 +55,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  background-image: cover;
 }
 a {
   -webkit-transition: all 150ms ease-in-out;
@@ -130,7 +131,7 @@ header .header-logo__second {
   position: absolute;
   left: 61px;
   width: 74px;
-  top: 13px;
+  bottom: 31px;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -816,7 +817,8 @@ div .reviews__title {
     background-image: url(assets/img/bgcontact1920.jpg);
   }
   .faq-page {
-    background-image: url(assets/img/faq1920.jpg);
+    /* background-image: url(assets/img/faq1920.jpg); */
+    background-size: cover;
   }
 }
 @media (min-width: 1921px) {
@@ -1256,7 +1258,7 @@ div .reviews__title {
   transition: all 5s ease;
 }
 .earth-box {
-  top: 274px;
+  top: 300px;
   right: -60px;
   display: block;
   position: absolute;
@@ -1273,56 +1275,40 @@ div .reviews__title {
   opacity: 1;
 }
 .SA {
-  bottom: 4px;
-  left: 133px;
+  bottom: 3px;
+  left: 129px;
 }
 .NA {
   top: 0px;
-  -webkit-clip-path: polygon(
-    0% 32%,
-    8% 13%,
-    27% 14%,
-    41% 7%,
-    55% 6%,
-    62% 0%,
-    100% 1%,
-    98% 21%,
-    83% 22%,
-    78% 31%,
-    70% 12%,
-    70% 44%,
-    51% 62%,
-    45% 69%,
-    54% 83%,
-    43% 87%,
-    43% 100%,
-    31% 91%,
-    21% 84%,
-    13% 59%,
-    16% 32%
-  );
   clip-path: polygon(
     0% 32%,
-    8% 13%,
-    27% 14%,
-    41% 7%,
-    55% 6%,
-    62% 0%,
-    100% 1%,
-    98% 21%,
-    83% 22%,
-    78% 31%,
-    70% 12%,
-    70% 44%,
-    51% 62%,
-    45% 69%,
-    54% 83%,
-    43% 87%,
-    43% 100%,
-    31% 91%,
-    21% 84%,
-    13% 59%,
-    16% 32%
+    14% 31%,
+    13% 62%,
+    18% 79%,
+    36% 98%,
+    44% 99%,
+    39% 82%,
+    49% 95%,
+    62% 93%,
+    49% 73%,
+    44% 66%,
+    58% 52%,
+    64% 45%,
+    71% 41%,
+    68% 25%,
+    83% 28%,
+    90% 19%,
+    96% 26%,
+    99% 19%,
+    96% 13%,
+    100% 0%,
+    78% 0%,
+    61% 0%,
+    50% 6%,
+    40% 7%,
+    27% 11%,
+    9% 11%,
+    1% 21%
   );
 }
 .africa {
@@ -1370,144 +1356,45 @@ div .reviews__title {
   );
 }
 .euroasia {
-  left: 330px;
-  top: 4px;
-  -webkit-clip-path: polygon(
-    0% 51%,
-    1% 33%,
-    4% 26%,
-    9% 33%,
-    9% 22%,
-    14% 13%,
-    20% 9%,
-    27% 12%,
-    34% 4%,
-    42% 7%,
-    46% 0%,
-    57% 5%,
-    64% 8%,
-    72% 6%,
-    81% 10%,
-    91% 11%,
-    100% 17%,
-    95% 27%,
-    95% 40%,
-    86% 29%,
-    90% 45%,
-    92% 60%,
-    88% 70%,
-    81% 61%,
-    82% 80%,
-    76% 85%,
-    75% 99%,
-    68% 100%,
-    63% 84%,
-    58% 94%,
-    59% 100%,
-    53% 98%,
-    47% 77%,
-    36% 93%,
-    31% 89%,
-    26% 70%,
-    25% 61%,
-    14% 58%,
-    7% 59%,
-    0% 61%
-  );
+  left: 321px;
+  top: 1px;
   clip-path: polygon(
-    0% 51%,
-    1% 33%,
-    4% 26%,
-    9% 33%,
-    9% 22%,
-    14% 13%,
-    20% 9%,
-    27% 12%,
-    34% 4%,
-    42% 7%,
-    46% 0%,
-    57% 5%,
-    64% 8%,
-    72% 6%,
-    81% 10%,
-    91% 11%,
-    100% 17%,
-    95% 27%,
-    95% 40%,
-    86% 29%,
-    90% 45%,
-    92% 60%,
-    88% 70%,
-    81% 61%,
-    82% 80%,
-    76% 85%,
-    75% 99%,
-    68% 100%,
-    63% 84%,
-    58% 94%,
-    59% 100%,
-    53% 98%,
-    47% 77%,
-    36% 93%,
-    31% 89%,
-    26% 70%,
-    25% 61%,
-    14% 58%,
-    7% 59%,
-    0% 61%
+    2% 33%,
+    5% 11%,
+    15% 2%,
+    21% 2%,
+    26% 12%,
+    39% 6%,
+    48% 1%,
+    59% 5%,
+    69% 9%,
+    87% 11%,
+    100% 14%,
+    97% 34%,
+    88% 32%,
+    93% 48%,
+    89% 64%,
+    83% 57%,
+    85% 75%,
+    80% 76%,
+    76% 91%,
+    71% 91%,
+    64% 77%,
+    61% 96%,
+    54% 89%,
+    47% 71%,
+    37% 88%,
+    28% 68%,
+    26% 59%,
+    19% 58%,
+    12% 54%,
+    5% 57%,
+    1% 49%
   );
 }
 .australia {
-  bottom: 12px;
-  right: 14px;
-  -webkit-clip-path: polygon(
-    8% 17%,
-    6% 34%,
-    28% 49%,
-    35% 55%,
-    21% 65%,
-    23% 82%,
-    39% 80%,
-    49% 91%,
-    64% 80%,
-    66% 96%,
-    88% 83%,
-    79% 73%,
-    69% 73%,
-    65% 57%,
-    63% 50%,
-    72% 47%,
-    60% 35%,
-    47% 28%,
-    36% 0%,
-    29% 3%,
-    31% 18%,
-    25% 27%
-  );
-  clip-path: polygon(
-    8% 17%,
-    6% 34%,
-    28% 49%,
-    35% 55%,
-    21% 65%,
-    23% 82%,
-    39% 80%,
-    49% 91%,
-    64% 80%,
-    66% 96%,
-    88% 83%,
-    79% 73%,
-    69% 73%,
-    65% 57%,
-    63% 50%,
-    72% 47%,
-    60% 35%,
-    47% 28%,
-    36% 0%,
-    29% 3%,
-    31% 18%,
-    25% 27%
-  );
+  bottom: 18px;
+  right: 16px;
 }
 .contact {
   margin-top: 105px;
@@ -1562,8 +1449,8 @@ div .reviews__title {
 }
 .contact-list__item .qr {
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   top: 50px;
   left: 57px;
 }
@@ -1681,6 +1568,68 @@ div .reviews__title {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   background: transparent;
 }
+.faq-item__adv {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border-radius: 7px;
+  min-height: 444px;
+  max-height: 444px;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transform: translateY(-2000px);
+  -ms-transform: translateY(-2000px);
+  transform: translateY(-2000px);
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 860px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.faq__active + .faq-item__adv {
+  opacity: 2;
+  z-index: 10;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.faq-item__hide {
+  opacity: 0 !important;
+}
+.item__adv-button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding: 28px 45px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border-radius: 7px;
+  padding: 28px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-grow: 1;
+  min-width: 40%;
+  max-width: 49%;
+  cursor: pointer;
+}
 .faq-item__disc {
   position: absolute;
   width: 100%;
@@ -1705,7 +1654,7 @@ div .reviews__title {
   transition: opacity 0.3s ease;
   overflow-y: auto;
 }
-.faq__active + .faq-item__disc {
+.faq__actives + .faq-item__disc {
   opacity: 1;
   z-index: 10;
   -webkit-transform: translateY(0px);

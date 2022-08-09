@@ -66,15 +66,23 @@ $('.reviews__title span').click(function(){
 // ответы на вопросы 
 $('.faq-item').click(function() {
     $(this).toggleClass('faq__active');
+    $('.faq-item').addClass('faq-item__hide')
+});
+$('.item__adv-button').click(function() {
+    $(this).toggleClass('faq__actives');
     $('.faq__close').addClass('close__active');
 });
 $(document).keyup(function(e) {
 	if (e.key === "Escape" || e.keyCode === 27) {
 		$('.faq-item').removeClass('faq__active');
         $('.faq__close').removeClass('close__active');
+        $('.faq-item').removeClass('faq-item__hide')
+        $('.item__adv-button').removeClass('faq__actives')
 	}
 });
 $('.faq__close ').click(function(){
     $('.faq-item').removeClass('faq__active');
     $('.faq__close').removeClass('close__active');
+    $('.faq-item').removeClass('faq-item__hide')
+    $('.item__adv-button').removeClass('faq__actives')
 })

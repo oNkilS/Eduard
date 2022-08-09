@@ -37,22 +37,21 @@
         </header>
         <main>
             <section class="contact">
-                <h1 class="contact__title animate__animated animate__fadeIn wow">Мы работаем дистанционно по всему миру,
-                    всегда можем связаться с вами по телефону или видео и отлично поработать.</h1>
+                <h1 class="contact__title animate__animated animate__fadeIn wow">МЫ РАБОТАЕМ ДИСТАНЦИОННО ПО ВСЕМУ МИРУ И ВСЕГДА МОЖЕМ СВЯЗАТЬСЯ С ВАМИ ПО ТЕЛЕФОНУ ИЛИ ВИДЕО.</h1>
                 <ul class="contact-list animate__animated animate__fadeIn">
-                    <li class="contact-list__item animate__animated animate__fadeIn animate__delay-0-5s"><a href="tel:+7 962 054 37 77"><img src="assets/img/c1.svg" alt="Иконка">+7 962 054 37 77 </a></li>
-                    <li class="contact-list__item animate__animated animate__fadeIn animate__delay-1s"><a href="#"><img src="assets/img/c2.svg" alt="Иконка">Instagram<img class="qr" src="assets/img/qr.png" alt="QR"></a></li>
-                    <li class="contact-list__item animate__animated animate__fadeIn animate__delay-1-5s"><a href="# "><img src="assets/img/c3.svg" alt="Иконка">WhatsApp<img class="qr" src="assets/img/qr.png" alt="QR"></a></li>
-                    <li class="contact-list__item animate__animated animate__fadeIn animate__delay-2s"><a href="mailto:info@biz-777.ru"><img src="assets/img/c4.svg" alt="Иконка">info@biz-777.ru</a></li>
-                    <li class="contact-list__item animate__animated animate__fadeIn animate__delay-2-5s"><a href="#"><img src="assets/img/c5.svg" alt="Иконка">Вконтакте<img class="qr" src="assets/img/qr.png" alt="QR"></a></li>
-                    <li class="contact-list__item animate__animated animate__fadeIn animate__delay-3s"><a href="#"><img src="assets/img/c6.svg" alt="Иконка">Телеграм<img class="qr" src="assets/img/qr.png" alt="QR"></a></li>
+                    <li class="contact-list__item"><a href="tel:+7 962 054 37 77"><img src="assets/img/c1.svg" alt="Иконка">+7 962 054 37 77 </a></li>
+                    <li class="contact-list__item animate__flash animate__animated animate__delay-5s"><a href="https://www.instagram.com/eduard.zheleznov/"><img src="assets/img/c2.svg" alt="Иконка">Instagram<img class="qr" src="assets/img/qr_insta.png" alt="QR"></a></li>
+                    <li class="contact-list__item animate__flash animate__animated animate__delay-5s"><a href="https://wa.me/79620543777 "><img src="assets/img/c3.svg" alt="Иконка">WhatsApp<img class="qr" src="assets/img/qr_wa.png" alt="QR"></a></li>
+                    <li class="contact-list__item"><a href="mailto:info@biz-777.ru"><img src="assets/img/c4.svg" alt="Иконка">info@biz-777.ru</a></li>
+                    <li class="contact-list__item animate__flash animate__animated animate__delay-5s"><a href="https://vk.com/eduard.zheleznov"><img src="assets/img/c5.svg" alt="Иконка">Вконтакте<img class="qr" src="assets/img/qr_vk.png" alt="QR"></a></li>
+                    <li class="contact-list__item animate__flash animate__animated animate__delay-5s"><a href="https://t.me/Zheleznov123"><img src="assets/img/c6.svg" alt="Иконка">Телеграм<img class="qr" src="assets/img/qr_telega.png" alt="QR"></a></li>
                 </ul>
                 <div class="earth-box">
-                <img class="earth-hover euroasia animate__animated animate__fadeOut animate__delay-2-3s"src="assets/img/euroasia.png" alt="Евразия">
-                <img class="earth-hover animate__animated animate__fadeOut animate__delay-1s NA"src="assets/img/NA.png" alt="Северная америка">
-                <img class="earth-hover animate__animated animate__fadeOut animate__delay-2s SA"src="assets/img/SA.png" alt="Южная америка">
-                <img class="earth-hover animate__animated animate__fadeOut animate__delay-2-7s africa"src="assets/img/africa.png" alt="Африка">
-                <img class="earth-hover animate__animated animate__fadeOut animate__delay-3s australia"src="assets/img/australia.png" alt="Австралия">
+                <img class="earth-hover euroasia animate__animated animate__fadeIn animate__delay-2s"src="assets/img/euroasia.png" alt="Евразия">
+                <img class="earth-hover animate__animated animate__fadeIn animate__delay-0-5s NA"src="assets/img/NA.png" alt="Северная америка">
+                <img class="earth-hover animate__animated animate__fadeIn animate__delay-1s SA"src="assets/img/SA.png" alt="Южная америка">
+                <img class="earth-hover animate__animated animate__fadeIn animate__delay-1-5s africa"src="assets/img/africa.png" alt="Африка">
+                <img class="earth-hover animate__animated animate__fadeIn animate__delay-2-5s australia"src="assets/img/australia.png" alt="Австралия">
                 <img src="assets/img/wm.png" alt="карта мира">
                 </div>
             </section>
@@ -62,8 +61,13 @@
 <script src="assets/js/main.js"></script>
 <script>
     $('.earth-box').hover(function() {
-        $('.earth-hover').removeClass('animate__fadeOut');
+        $('.earth-hover').removeClass('animate__fadeIn');
     });
+    setTimeout(
+    function() 
+    {
+        $('.earth-hover').removeClass('animate__fadeIn');
+    }, 4000);
 </script>
 </body>
 </html>

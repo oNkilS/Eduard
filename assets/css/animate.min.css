@@ -109,11 +109,19 @@
   -webkit-animation-delay: calc(var(--animate-delay) * 3);
   animation-delay: calc(var(--animate-delay) * 3);
 }
+.animate__animated.animate__delay-3-5s {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
 .animate__animated.animate__delay-4s {
   -webkit-animation-delay: 4s;
   animation-delay: 4s;
   -webkit-animation-delay: calc(var(--animate-delay) * 4);
   animation-delay: calc(var(--animate-delay) * 4);
+}
+.animate__animated.animate__delay-4-5s {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 .animate__animated.animate__delay-5s {
   -webkit-animation-delay: 5s;

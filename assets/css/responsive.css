@@ -48,6 +48,9 @@
   header.fixed {
     height: auto;
   }
+  header .header-logo__second {
+    bottom: 18px;
+  }
   .index {
     overflow-y: auto;
   }
@@ -151,7 +154,11 @@
     min-height: auto;
     max-height: 100%;
   }
-  .faq-item {
+  .faq-item__adv {
+    min-height: auto;
+  }
+  .faq-item,
+  .faq-item__quest {
     font-size: 16px;
     padding: 18px 11px;
   }
@@ -159,7 +166,7 @@
     margin-top: 40px;
   }
   .earth-box {
-    top: 180px;
+    top: 220px;
     right: 0px;
   }
   .contact-list,
