@@ -66,12 +66,15 @@ $('.reviews__title span').click(function(){
 // ответы на вопросы 
 $('.faq-item').click(function() {
     $(this).toggleClass('faq__active');
+    $('.faq__close').addClass('close__active');
 });
 $(document).keyup(function(e) {
 	if (e.key === "Escape" || e.keyCode === 27) {
 		$('.faq-item').removeClass('faq__active');
+        $('.faq__close').removeClass('close__active');
 	}
 });
 $('.faq__close ').click(function(){
     $('.faq-item').removeClass('faq__active');
+    $('.faq__close').removeClass('close__active');
 })

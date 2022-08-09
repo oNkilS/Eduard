@@ -5,6 +5,25 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+@media (max-width: 1555px) {
+  .partners__item:nth-child(4) > .item__discription,
+  .partners__item:nth-child(8) > .item__discription,
+  .partners__item:nth-child(12) > .item__discription {
+    left: -110px;
+  }
+  .partners__item:nth-child(4) .item__discription img,
+  .partners__item:nth-child(8) .item__discription img,
+  .partners__item:nth-child(12) .item__discription img {
+    position: relative;
+    left: 80px;
+  }
+}
 @media (max-width: 1439px) {
   main {
     padding: 0 15px;
@@ -147,17 +166,6 @@
   .contact__title {
     position: relative;
     z-index: 11;
-  }
-  .partners__item:nth-child(4) > .item__discription,
-  .partners__item:nth-child(8) > .item__discription,
-  .partners__item:nth-child(12) > .item__discription {
-    left: -110px;
-  }
-  .partners__item:nth-child(4) .item__discription img,
-  .partners__item:nth-child(8) .item__discription img,
-  .partners__item:nth-child(12) .item__discription img {
-    position: relative;
-    left: 80px;
   }
 }
 @media (max-width: 1239px) {

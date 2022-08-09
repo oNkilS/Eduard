@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Golos";
   font-style: normal;
@@ -38,6 +45,7 @@ button {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  transition: color 150ms ease-in-out;
 }
 body {
   background: #0f0a3f;
@@ -47,6 +55,14 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+}
+a {
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+header a:hover {
+  color: #00b2e8;
 }
 .index {
   /* background-image: url(assets/img/background.png); */
@@ -59,7 +75,8 @@ body {
 }
 /* шапка */
 header {
-  background: rgba(255, 255, 255, 0.054);
+  /* background: rgba(255, 255, 255, 0.054); */
+  background: rgb(56, 49, 108);
   -webkit-box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
     inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
   box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
@@ -102,16 +119,21 @@ nav {
 
 header .header-logo__first {
   position: absolute;
-  left: 27px;
-  width: 45px;
+  left: 28px;
+  width: 42px;
   opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 header .header-logo__second {
   position: absolute;
   left: 61px;
-  width: 75px;
+  width: 74px;
+  top: 13px;
   opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   -webkit-clip-path: polygon(
     48% 0%,
@@ -170,9 +192,17 @@ header .header-logo__second {
 .header-menu__link:hover {
   color: #00b2e8;
 }
-body .active {
+body .active,
+.promotion__btn:hover,
+.more__btn:hover,
+.new__btn:hover,
+.business__btn:hover,
+.create__btn:hover,
+.active__btn:hover,
+.reviews-box__btn:hover {
   color: #00b2e8;
 }
+
 .header-menu__link img {
   padding-left: 5px;
   padding-top: 3px;
@@ -207,11 +237,6 @@ body .active {
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
-}
-.intro .header-menu__drop {
-  background: #293440;
-  box-shadow: rgb(194 194 194 / 6%) 36.6667px -36.6667px 36.6667px inset,
-    rgb(255 255 255 / 6%) -36.6667px 36.6667px 36.6667px inset;
 }
 .dropdown:hover + .header-menu__drop {
   opacity: 1;
@@ -265,10 +290,14 @@ body .active {
   border: 1px solid #00b2e8;
   border-radius: 7px;
   padding: 16px 25px;
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 .header-callback a:hover {
-  background: #ffffff;
-  color: black;
+  -webkit-box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  color: #ffffff;
 }
 /* конец шапки  */
 /* контент главной*/
@@ -354,13 +383,17 @@ body .active {
   color: #ffffff;
   padding: 29px 15px 27px 15px;
   max-width: 400px;
+  -webkit-box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
 .main-modal__btn:hover {
   -webkit-transform: scale(1.02);
   -ms-transform: scale(1.02);
   transform: scale(1.02);
+  -webkit-box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 .main-image {
@@ -528,19 +561,33 @@ div .reviews__title {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  background: #00b2e8;
+  /* background: #00b2e8; */
+  background: transparent;
   border-radius: 7px;
   color: #ffffff;
   padding: 28px 72px 28px 72px;
   cursor: pointer;
   border: none;
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  -webkit-box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
 }
+.reviews-button:hover {
+  -webkit-box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
 .reviews-button__active {
   opacity: 0.5;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
   cursor: inherit;
   padding: 29px 71px 25px 71px;
+}
+.reviews-leftbar > svg > path {
+  opacity: 1;
 }
 .reviews-rightbar {
   min-width: 720px;
@@ -1074,6 +1121,9 @@ div .reviews__title {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+.mfp-figure:after {
+  border-radius: 7px;
+}
 .partners {
   margin-top: 100px;
   margin-bottom: 70px;
@@ -1228,6 +1278,29 @@ div .reviews__title {
 }
 .NA {
   top: 0px;
+  -webkit-clip-path: polygon(
+    0% 32%,
+    8% 13%,
+    27% 14%,
+    41% 7%,
+    55% 6%,
+    62% 0%,
+    100% 1%,
+    98% 21%,
+    83% 22%,
+    78% 31%,
+    70% 12%,
+    70% 44%,
+    51% 62%,
+    45% 69%,
+    54% 83%,
+    43% 87%,
+    43% 100%,
+    31% 91%,
+    21% 84%,
+    13% 59%,
+    16% 32%
+  );
   clip-path: polygon(
     0% 32%,
     8% 13%,
@@ -1255,6 +1328,26 @@ div .reviews__title {
 .africa {
   bottom: 55px;
   right: 361px;
+  -webkit-clip-path: polygon(
+    10% 7%,
+    0% 28%,
+    5% 45%,
+    31% 47%,
+    41% 66%,
+    44% 92%,
+    52% 98%,
+    74% 90%,
+    81% 81%,
+    91% 87%,
+    99% 67%,
+    84% 58%,
+    100% 38%,
+    83% 25%,
+    74% 9%,
+    55% 4%,
+    42% 0%,
+    22% 3%
+  );
   clip-path: polygon(
     10% 7%,
     0% 28%,
@@ -1279,6 +1372,48 @@ div .reviews__title {
 .euroasia {
   left: 330px;
   top: 4px;
+  -webkit-clip-path: polygon(
+    0% 51%,
+    1% 33%,
+    4% 26%,
+    9% 33%,
+    9% 22%,
+    14% 13%,
+    20% 9%,
+    27% 12%,
+    34% 4%,
+    42% 7%,
+    46% 0%,
+    57% 5%,
+    64% 8%,
+    72% 6%,
+    81% 10%,
+    91% 11%,
+    100% 17%,
+    95% 27%,
+    95% 40%,
+    86% 29%,
+    90% 45%,
+    92% 60%,
+    88% 70%,
+    81% 61%,
+    82% 80%,
+    76% 85%,
+    75% 99%,
+    68% 100%,
+    63% 84%,
+    58% 94%,
+    59% 100%,
+    53% 98%,
+    47% 77%,
+    36% 93%,
+    31% 89%,
+    26% 70%,
+    25% 61%,
+    14% 58%,
+    7% 59%,
+    0% 61%
+  );
   clip-path: polygon(
     0% 51%,
     1% 33%,
@@ -1325,6 +1460,30 @@ div .reviews__title {
 .australia {
   bottom: 12px;
   right: 14px;
+  -webkit-clip-path: polygon(
+    8% 17%,
+    6% 34%,
+    28% 49%,
+    35% 55%,
+    21% 65%,
+    23% 82%,
+    39% 80%,
+    49% 91%,
+    64% 80%,
+    66% 96%,
+    88% 83%,
+    79% 73%,
+    69% 73%,
+    65% 57%,
+    63% 50%,
+    72% 47%,
+    60% 35%,
+    47% 28%,
+    36% 0%,
+    29% 3%,
+    31% 18%,
+    25% 27%
+  );
   clip-path: polygon(
     8% 17%,
     6% 34%,
@@ -1419,6 +1578,8 @@ div .reviews__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 /* ответы на вопросы */
@@ -1491,26 +1652,34 @@ div .reviews__title {
   -webkit-backdrop-filter: blur(69.6667px);
   backdrop-filter: blur(69.6667px);
   border: 1px solid rgba(255, 255, 255, 0);
+
+  -webkit-transition: all 150ms ease-in-out;
+
+  -o-transition: all 150ms ease-in-out;
+
+  transition: all 150ms ease-in-out;
+  /* box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db; */
 }
+
 .faq-item:hover {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #3498db;
+  -webkit-box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  background: transparent;
 }
 .faq-item__quest {
   background: transparent;
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
   box-shadow: none;
   -webkit-box-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .faq-item__quest:hover {
-  border: 1px solid rgba(255, 255, 255, 0);
-  background: rgba(255, 255, 255, 0.054);
-  -webkit-box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
-    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
-  box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
-    inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
-  -webkit-backdrop-filter: blur(69.6667px);
-  backdrop-filter: blur(69.6667px);
+  border: 1px solid #3498db;
+  -webkit-box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  background: transparent;
 }
 .faq-item__disc {
   position: absolute;
@@ -1542,6 +1711,7 @@ div .reviews__title {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
   transform: translateY(0px);
+  padding-bottom: 20px;
 }
 .faq__close {
   width: 15px;
@@ -1554,6 +1724,10 @@ div .reviews__title {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  display: none;
+}
+.close__active {
+  display: block;
 }
 .faq__close:hover {
   -webkit-transform: rotate(-90deg) scale(1.2);
