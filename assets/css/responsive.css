@@ -28,29 +28,6 @@
   main {
     padding: 0 15px;
   }
-  .header {
-    max-width: 100%;
-  }
-  .header-menu {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  .header-menu__link {
-    font-size: 16px;
-  }
-  .header-menu__item {
-    padding: 0 10px;
-  }
-  .header-callback a {
-    font-size: 14px;
-  }
-  header.fixed {
-    height: auto;
-  }
-  header .header-logo__second {
-    bottom: 18px;
-  }
   .index {
     overflow-y: auto;
   }
@@ -111,7 +88,8 @@
   .people,
   .garantii,
   .awards,
-  .partners {
+  .partners,
+  .reasons {
     margin-top: 80px;
   }
   .company__title {
@@ -210,12 +188,43 @@
     left: 80px;
   }
 }
+@media (max-width: 1250px) {
+  .header {
+    max-width: 100%;
+  }
+  .header-menu {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .header-menu__link {
+    font-size: 16px;
+  }
+  .header-menu__item {
+    padding: 0 10px;
+  }
+  .header-callback a {
+    font-size: 14px;
+  }
+  header.fixed {
+    height: auto;
+  }
+  header .header-logo__second {
+    bottom: 21px;
+  }
+  .header-menu__drop {
+    top: 50px;
+  }
+  .header-menu__dropitem a {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1130px) {
   .reviews-rightbar {
     min-width: 60%;
   }
 }
-@media (max-width: 1070px) {
+@media (max-width: 1080px) {
   .header-menu__link {
     font-size: 14px;
   }

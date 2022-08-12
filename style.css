@@ -76,7 +76,7 @@ header a:hover {
 /* шапка */
 header {
   /* background: rgba(255, 255, 255, 0.054); */
-  background: rgb(56, 49, 108);
+  background: #231e4f;
   -webkit-box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
     inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
   box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
@@ -93,7 +93,7 @@ header.fixed {
   height: 99px;
   position: fixed;
   top: 0px;
-  background: rgba(56, 49, 108, 1);
+  background: #231e4f;
 }
 nav {
   display: -webkit-box;
@@ -130,8 +130,9 @@ header .header-logo__second {
   position: absolute;
   left: 61px;
   width: 74px;
-  bottom: 31px;
+  bottom: 32px;
   opacity: 0;
+  transform: scale(0.98);
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -216,7 +217,7 @@ body .active,
   visibility: hidden;
   list-style: none;
   position: absolute;
-  background: #38316c;
+  background: #231e4f;
   -webkit-box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
     inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
   box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
@@ -872,6 +873,22 @@ div .reviews__title {
   color: #ffffff;
   margin-bottom: 25px;
 }
+.director__discription-lastblock {
+  display: flex;
+  margin-bottom: 60px;
+}
+.director__discription-last {
+  font-family: "Golos";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.director__discription-img {
+  margin-top: -20px;
+  margin-left: 33px;
+}
 .director-list {
   padding: 0;
   display: -webkit-box;
@@ -908,9 +925,24 @@ div .reviews__title {
   padding-right: 23px;
   width: 56px;
 }
+.reasons {
+  margin-top: 100px;
+}
+body .reasons__title {
+  margin-bottom: 15px;
+}
+.reasons__h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+}
 .company {
   margin-top: 100px;
 }
+
 .numbers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -942,8 +974,7 @@ div .reviews__title {
   font-size: 140px;
   line-height: 140px;
   text-transform: uppercase;
-  color: #00b2e8;
-  opacity: 0.6;
+  color: #066fa4;
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -1174,7 +1205,7 @@ div .reviews__title {
 }
 .item__discription {
   opacity: 0;
-  background: #00b2e8;
+  background: #066fa4;
   -webkit-box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
     inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
   box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
