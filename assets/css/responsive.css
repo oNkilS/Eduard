@@ -11,6 +11,9 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+.mobile-menu {
+  display: none;
+}
 @media (max-width: 1555px) {
   .partners__item:nth-child(4) > .item__discription,
   .partners__item:nth-child(8) > .item__discription,
@@ -153,6 +156,23 @@
     z-index: 11;
   }
 }
+@media (min-width: 1330px) {
+  .reasons-item:nth-child(5n) .reasons-item__disc {
+    width: 240px;
+    height: 508px;
+    top: 0;
+  }
+}
+@media (max-width: 1330px) {
+  .reasons-item {
+    width: 23%;
+  }
+  .reasons-item:nth-child(4n) .reasons-item__disc {
+    width: 100%;
+    height: 508px;
+    top: 0;
+  }
+}
 @media (max-width: 1235px) {
   .director {
     background-size: 40%;
@@ -227,5 +247,17 @@
 @media (max-width: 1080px) {
   .header-menu__link {
     font-size: 14px;
+  }
+}
+@media (max-width: 1000px) {
+  /* menu */
+  .mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+  }
+  nav {
+    display: none;
   }
 }

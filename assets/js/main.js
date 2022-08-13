@@ -43,6 +43,14 @@ $('.active__btn').click(function() {
 $('.reviews__title span').click(function(){
     $('.reviews__hide').toggleClass('reviews__show')
 });
+
+
+$('.reasons-item').click(function(){
+    $('.reasons-item:hover > .reasons-item__disc').toggleClass('showitem');
+});
+$('.showitem').click(function() {
+    $('.showitem').removeClass('showitem');
+});
 // Скролл шапки
     let header = $('header');
     let hederHeight = header.height(); // вычисляем высоту шапки
@@ -76,8 +84,9 @@ $(document).keyup(function(e) {
 	if (e.key === "Escape" || e.keyCode === 27) {
 		$('.faq-item').removeClass('faq__active');
         $('.faq__close').removeClass('close__active');
-        $('.faq-item').removeClass('faq-item__hide')
-        $('.item__adv-button').removeClass('faq__actives')
+        $('.faq-item').removeClass('faq-item__hide');
+        $('.item__adv-button').removeClass('faq__actives');
+        $('.showitem').removeClass('showitem');
 	}
 });
 $('.faq__close ').click(function(){
@@ -86,3 +95,26 @@ $('.faq__close ').click(function(){
     $('.faq-item').removeClass('faq-item__hide')
     $('.item__adv-button').removeClass('faq__actives')
 })
+
+// menu
+  /**
+   * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+   *
+   * @private
+   * @author Todd Motto
+   * @link https://github.com/toddmotto/foreach
+   * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+   * @callback requestCallback      callback   - Callback function for each iteration.
+   * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+   * @returns {}
+   */
+   var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+   var hamburgers = document.querySelectorAll(".hamburger");
+   if (hamburgers.length > 0) {
+     forEach(hamburgers, function(hamburger) {
+       hamburger.addEventListener("click", function() {
+         this.classList.toggle("is-active");
+       }, false);
+     });
+   }

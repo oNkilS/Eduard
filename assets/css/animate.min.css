@@ -3657,8 +3657,8 @@
   }
   to {
     visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
   }
 }
 @keyframes slideOutDown {
@@ -3668,8 +3668,8 @@
   }
   to {
     visibility: hidden;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
   }
 }
 .animate__slideOutDown {
