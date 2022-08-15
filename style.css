@@ -484,6 +484,9 @@ body .active,
 .other-page {
   background-image: url(assets/img/other1920w.jpg);
 }
+.other-page-reviews .content {
+  overflow-x: hidden;
+}
 .reviews {
   padding-top: 85px;
   display: -webkit-box;

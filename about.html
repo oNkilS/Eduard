@@ -212,7 +212,7 @@
             </section>
             <section class="people">
                 <h2 class="director__title animate__animated animate__fadeIn wow">Ключевые люди компании</h2>
-                <div class="people-row animate__animated animate__fadeIn wow">
+                <div class="people-row owl-carousel owl-theme animate__animated animate__fadeIn wow">
                     <div class="people__item">
                         <img src="assets/img/p1.webp" alt="Александр">
                         <h3>Александр</h3>
@@ -249,15 +249,15 @@
                 <h2 class="company__title animate__animated animate__fadeIn wow">Прописываю гарантии в договоре</h2>
                 <div class="garantii-row">
                     <div class="item animate__animated animate__fadeIn wow">
-                        <div class="garantii__top">результат</div>
+                        <div class="garantii__top mob_gar1">результат</div>
                         <div class="garantii__bottom">Если вы заказываете услуги качества «премиум», в договоре прописывается определённая гарантия результата. В случае, если гарантированного результата нет, вам выплачивается сумма равная 50% от суммы договора.</div>
                     </div>
                     <div class="item animate__animated animate__fadeIn wow">
-                        <div class="garantii__top">реализация</div>
+                        <div class="garantii__top mob_gar2">реализация</div>
                         <div class="garantii__bottom">Все обсуждаемые пункты, прописываются в договоре. Оплата поэтапная, после сделанной работы. Проговорить это одно, а зафиксировать всё в официальном договоре, это совершенно другое.</div>
                     </div>
                     <div class="item animate__animated animate__fadeIn wow">
-                        <div class="garantii__top">поддержка</div>
+                        <div class="garantii__top mob_gar3">поддержка</div>
                         <div class="garantii__bottom">В договоре прописываются часы дополнительных работ, что означает, что после реализации, вы можете обратиться и я без дополнительной оплаты помогу вам в решении каких-либо задач по заказанным у меня услугам</div>
                     </div>
                 </div>
@@ -265,7 +265,7 @@
             <section class="awards">
                 <h2 class="awards__title animate__animated animate__fadeIn wow">Сертификаты/грамоты/награды</h2>
                 <div class="awards-row">
-                    <div class="popup-gallery animate__animated animate__fadeIn wow">
+                    <div class="popup-gallery owl-carousel owl-theme animate__animated animate__fadeIn wow">
                         <a href="assets/img/img_big1.png" data-effect="mfp-zoom-in"><img src="assets/img/img_big1.jpg" alt="image" /></a>
                         <a href="assets/img/img_big2.png" data-effect="mfp-zoom-in"><img src="assets/img/img_big2.jpg" alt="image" /></a>
                         <a href="assets/img/img_big3.png" data-effect="mfp-zoom-in"><img src="assets/img/img_big3.jpg" alt="image" /></a>
@@ -386,6 +386,17 @@
 <script src="assets/js/wow.min.js"></script>
 <script>
 new WOW().init();
+</script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    items: 1,
+    lazyLoad:true,
+    video: true,
+    navText: ["<img src='assets/img/prev.png'>", "<img src='assets/img/next.png'>"]
+});
 </script>
 <script>
 $(document).ready(function() {
