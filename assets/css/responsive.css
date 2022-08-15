@@ -274,6 +274,7 @@
   .intro__media video {
     width: auto;
     height: 100vh;
+    min-height: 800px;
   }
   .desctope__none {
     display: block;
@@ -354,7 +355,19 @@
   }
   .main-image {
     position: absolute;
-    display: none;
+    /* display: none; */
+  }
+  .main-list {
+    margin-top: 212px;
+  }
+  .main-image div {
+    position: absolute;
+    width: 200px;
+    height: 210px;
+    margin: 0;
+    background-size: cover;
+    top: 100px;
+    left: calc(50% + 50px);
   }
   .main-list__item {
     font-size: 16px;
@@ -374,7 +387,7 @@
   .reviews-rightbar {
     min-width: inherit;
     right: inherit;
-    max-width: 100%;
+    max-width: 94%;
   }
   .video-box,
   .audio-box {
@@ -449,6 +462,7 @@
   }
   .reviews-button {
     z-index: 10;
+    max-width: 94%;
   }
   .reviews__form {
     padding: 10px;
