@@ -618,17 +618,17 @@
     width: 33px;
     height: 33px;
     position: absolute;
-    background-image: url("assets/img/about1.png");
+    background-image: url("/Eduard/assets/img/about1.svg");
     background-size: cover;
     background-repeat: no-repeat;
     left: calc(50% - 100px);
     top: -10px;
   }
   .mob_gar2::before {
-    background-image: url("assets/img/about2.svg");
+    background-image: url("/Eduard/assets/img/about2.svg");
   }
   .mob_gar3::before {
-    background-image: url("assets/img/about3.svg");
+    background-image: url("/Eduard/assets/img/about3.svg");
   }
   .awards__title {
     font-size: 28px;
