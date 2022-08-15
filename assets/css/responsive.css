@@ -271,6 +271,10 @@
   nav {
     height: 0;
   }
+  .intro__media video {
+    width: auto;
+    height: 100vh;
+  }
   .desctope__none {
     display: block;
   }
@@ -315,6 +319,9 @@
     transition: height 150ms ease;
     background: #231e4f;
     box-shadow: none;
+  }
+  .dropdown > a {
+    max-width: 60%;
   }
   .dropdown-open {
     height: auto;
@@ -461,5 +468,10 @@
   .reviews__hide {
     width: 94%;
     height: 100px;
+  }
+  .rew__disc {
+    top: 20px;
+    right: inherit;
+    left: 220px;
   }
 }

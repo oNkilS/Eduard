@@ -40,7 +40,7 @@ $('.active__btn').click(function() {
     $('.new__btn').removeClass('active');
 });
 
-$('.reviews__title span').click(function(){
+$('.rew__disc').click(function(){
     $('.reviews__hide').toggleClass('reviews__show')
 });
 
