@@ -177,6 +177,7 @@ header .header-logo__second {
 }
 .header-menu__item {
   padding: 40px 15px 37px 15px;
+  position: relative;
 }
 .header-menu__link {
   font-family: "Golos";
@@ -204,13 +205,6 @@ body .active,
   color: #00b2e8;
 }
 
-.header-menu__link img {
-  padding-left: 5px;
-  padding-top: 3px;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-}
 .header-menu__drop {
   opacity: 0;
   z-index: -1;
@@ -239,7 +233,7 @@ body .active,
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
-.dropdown:hover + .header-menu__drop {
+.dropdown-open {
   opacity: 1;
   z-index: 100;
   visibility: visible;
@@ -247,15 +241,44 @@ body .active,
   -ms-transform: translateY(0px);
   transform: translateY(0px);
 }
-.header-menu__drop:hover {
-  opacity: 1;
-  z-index: 100;
-  visibility: visible;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
+/* @media (min-width: 1000px) {
+  .dropdown:hover + .header-menu__drop {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  .header-menu__drop:hover {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+} */
+.arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  right: 0;
+  bottom: 42px;
+  cursor: pointer;
 }
-
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  bottom: 38px;
+}
+.arrow:hover {
+  border-color: #00b2e8;
+}
 .header-menu__dropitem a {
   padding: 5px 15px;
   display: block;
@@ -302,6 +325,9 @@ body .active,
 }
 /* конец шапки  */
 /* контент главной*/
+.mobile-index__img {
+  display: none;
+}
 .main {
   display: -webkit-box;
   display: -ms-flexbox;

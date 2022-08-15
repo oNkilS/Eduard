@@ -118,3 +118,10 @@ $('.faq__close ').click(function(){
        }, false);
      });
    }
+$('.hamburger').click(function(){
+    $('.header-menu').toggleClass('menu-active');
+});
+$('.arrow').click(function(){
+    $('.header-menu__drop').toggleClass('dropdown-open');
+    $('.arrow').toggleClass('up');
+});

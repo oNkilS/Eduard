@@ -7,6 +7,7 @@
     <title>Контакты</title>
     <meta name="description" content="Как связаться с нами">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animate.min.css"/>
@@ -14,13 +15,27 @@
 <body class="contact-page">
     <div class="content">
         <header>
+            <div class="mobile-menu">
+                <button class="hamburger hamburger--emphatic active" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>  
+                <img class ="mobile-menu__logo" src="assets/img/moblogo.svg" alt="mobile logo">
+                <div class="mobile-menu__phone"><a href="#">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.6111 17.3611C21.9444 17.3611 20.1389 17.0833 18.6111 16.5278C18.4722 16.5278 18.3333 16.5278 18.1944 16.5278C17.7778 16.5278 17.5 16.6667 17.2222 16.9444L14.1667 20C10.2778 17.9167 6.94444 14.7222 5 10.8333L8.05556 7.77778C8.47222 7.36111 8.61111 6.80556 8.33333 6.38889C7.91667 4.86111 7.63889 3.05556 7.63889 1.38889C7.63889 0.694444 6.94444 0 6.25 0H1.38889C0.694444 0 0 0.694444 0 1.38889C0 14.4444 10.5556 25 23.6111 25C24.3056 25 25 24.3056 25 23.6111V18.75C25 18.0556 24.3056 17.3611 23.6111 17.3611ZM2.77778 2.77778H4.86111C5 4.02778 5.27778 5.27778 5.55556 6.38889L3.88889 8.05556C3.33333 6.38889 2.91667 4.58333 2.77778 2.77778ZM22.2222 22.2222C20.4167 22.0833 18.6111 21.6667 16.9444 21.1111L18.6111 19.4444C19.7222 19.7222 20.9722 20 22.2222 20V22.2222Z" fill="#00B2E8"/>
+                    </svg>
+                    </a>
+                </div>
+            </div>
             <nav>
                 <div class="header-logo"><a href="/Eduard"><img src="assets/img/logo.svg" alt="logo">
-                    <img class="header-logo__first" src="assets/img/Ed.svg" alt="logo">
-                    <img class="header-logo__second" src="assets/img/Ej.svg" alt="logo"></a></div>
+                <img class="header-logo__first" src="assets/img/Ed.png" alt="logo">
+                <img class="header-logo__second" src="assets/img/Ej.png" alt="logo"></a></div>
                 <ul class="header-menu">
-                    <li class="header-menu__item"><a href="/Eduard" class="header-menu__link">Главная</a></li>
-                    <li class="header-menu__item dropdown"><a href="#" class="header-menu__link">Услуги и цены <img src="assets/img/drop.svg"  alt="icon"></a></li>
+                    <li class="header-menu__item"><a href="/Eduard" class="header-menu__link active">Главная</a></li>
+                    <li class="header-menu__item dropdown"><a href="#" class="header-menu__link">Услуги и цены </a><i class="arrow down"></i></li>
                         <ul class="header-menu__drop">
                             <li class="header-menu__dropitem"><a href="#">Создание сайтов</a></li>
                             <li class="header-menu__dropitem"><a href="#">Продвижение сайтов</a></li>
@@ -30,7 +45,7 @@
                     <li class="header-menu__item"><a href="reviews.html" class="header-menu__link">Живые отзывы</a></li>
                     <li class="header-menu__item"><a href="about.html" class="header-menu__link">О компании</a></li>
                     <li class="header-menu__item"><a href="faq.html" class="header-menu__link">Ответы на вопросы</a></li>
-                    <li class="header-menu__item"><a href="contacts.html" class="header-menu__link active">Контакты</a></li>
+                    <li class="header-menu__item"><a href="contacts.html" class="header-menu__link">Контакты</a></li>
                 </ul>
                 <div class="header-callback"><a href="#">Заказать звонок</a></div>
             </nav>
