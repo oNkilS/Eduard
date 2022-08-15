@@ -445,6 +445,10 @@
   }
   .reviews__form {
     padding: 10px;
+    display: none;
+  }
+  .active-box {
+    display: block;
   }
   .reviews-button__active {
     display: none;
