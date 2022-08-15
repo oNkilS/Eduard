@@ -389,6 +389,7 @@ new WOW().init();
 </script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script>
+if(window.matchMedia('(max-width: 1000px)').matches) {
     $('.owl-carousel').owlCarousel({
     loop:true,
     nav:true,
@@ -397,6 +398,8 @@ new WOW().init();
     video: true,
     navText: ["<img src='assets/img/prev.png'>", "<img src='assets/img/next.png'>"]
 });
+}
+
 </script>
 <script>
 $(document).ready(function() {

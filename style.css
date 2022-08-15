@@ -484,11 +484,13 @@ body .active,
 .other-page {
   background-image: url(assets/img/other1920w.jpg);
 }
-.other-page content {
+.other-page {
   overflow-x: hidden;
+  min-height: 100vh;
 }
-.other-page-reviews .content {
+.other-page-reviews {
   overflow-x: hidden;
+  min-height: 100vh;
 }
 .reviews {
   padding-top: 85px;
