@@ -271,6 +271,9 @@
   nav {
     height: 0;
   }
+  .desctope__none {
+    display: block;
+  }
   .header-logo {
     display: none;
   }
@@ -325,6 +328,7 @@
     right: 30px;
     width: 10px;
     height: 10px;
+    z-index: 100;
   }
   main {
     padding: 60px 11px 10px 11px;
@@ -355,5 +359,103 @@
   }
   .main-content {
     width: 100%;
+  }
+  .reviews-leftbar {
+    padding-top: 20px;
+    max-width: 100%;
+  }
+  .reviews-rightbar {
+    min-width: inherit;
+    right: inherit;
+    max-width: 100%;
+  }
+  .video-box,
+  .audio-box {
+    transition: none;
+  }
+  .active-box {
+    position: relative;
+  }
+  .reviews {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .reviews-leftbar svg {
+    display: none;
+  }
+  .video-box,
+  .audio-box {
+    width: 100%;
+  }
+  .owl-next,
+  .owl-next:hover {
+    right: -15px;
+    top: 30%;
+    box-shadow: none;
+    background: transparent;
+    backdrop-filter: none;
+  }
+  .owl-prev,
+  .owl-prev:hover {
+    left: -15px;
+    top: 30%;
+    box-shadow: none;
+    background: transparent;
+    backdrop-filter: none;
+  }
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: transparent;
+  }
+  .reviews-box__btn {
+    padding: 14px 16px;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .audio-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 7px;
+    position: absolute;
+    left: 35px;
+    top: 28px;
+  }
+  .audio-container p {
+    width: 100%;
+    text-align: left;
+    padding-left: 140px;
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .audio-player {
+    width: 86%;
+    padding: 0;
+    padding-top: 25px;
+  }
+  .audio-container {
+    padding: 28px 0;
+  }
+  .mobile__none {
+    display: none;
+  }
+  .reviews-leftbar p {
+    font-size: 18px;
+  }
+  .reviews-button {
+    z-index: 10;
+  }
+  .reviews__form {
+    padding: 10px;
+  }
+  .reviews-button__active {
+    display: none;
+  }
+  .input__file-button,
+  .reviews__submit,
+  .reviews__input {
+    font-size: 14px;
+  }
+  .reviews__hide {
+    width: 94%;
+    height: 100px;
   }
 }

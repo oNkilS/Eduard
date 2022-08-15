@@ -64,6 +64,9 @@ a {
 header a:hover {
   color: #00b2e8;
 }
+.desctope__none {
+  display: none;
+}
 .index {
   /* background-image: url(assets/img/background.png); */
   overflow: hidden;
@@ -560,7 +563,7 @@ div .reviews__title {
   width: 430px;
   height: 203px;
   padding: 7px 15px;
-  background: #00b2e8;
+  background: #066fa4;
   -webkit-box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
     inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
   box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
@@ -692,6 +695,9 @@ div .reviews__title {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: -1;
+}
+.video-box video {
+  border-radius: 0 7px 7px 7px;
 }
 .new-business,
 .active-business {
