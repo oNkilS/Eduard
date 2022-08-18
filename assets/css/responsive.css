@@ -11,6 +11,13 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 .mobile-menu {
   display: none;
 }
@@ -260,8 +267,14 @@
 @media (max-width: 1000px) {
   /* menu */
   .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 13px;
     position: fixed;
@@ -269,8 +282,11 @@
     width: 100%;
     background: #231e4f;
     border-radius: 0px 0px 7px 7px;
+    -webkit-box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+      inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
     box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
       inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+    -webkit-backdrop-filter: blur(69.6667px);
     backdrop-filter: blur(69.6667px);
   }
   .mobile-menu__logo {
@@ -294,18 +310,27 @@
     display: none;
   }
   .header-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     border-radius: 7px;
+    -webkit-transform: translateY(-250px);
+    -ms-transform: translateY(-250px);
     transform: translateY(-250px);
     opacity: 0;
     z-index: -1;
+    -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
     transition: all 350ms ease;
   }
   .header-menu__link {
     font-size: 16px;
   }
   .menu-active {
+    -webkit-transform: translateY(60px);
+    -ms-transform: translateY(60px);
     transform: translateY(60px);
     opacity: 1;
     z-index: 2;
@@ -325,8 +350,11 @@
     padding: 0;
     border-radius: 0;
     height: 0;
+    -webkit-transition: height 150ms ease;
+    -o-transition: height 150ms ease;
     transition: height 150ms ease;
     background: #231e4f;
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
   .dropdown > a {
@@ -407,12 +435,17 @@
   }
   .video-box,
   .audio-box {
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
   .active-box {
     position: relative;
   }
   .reviews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
   }
@@ -430,16 +463,20 @@
   .owl-next:hover {
     right: -15px;
     top: 30%;
+    -webkit-box-shadow: none;
     box-shadow: none;
     background: transparent;
+    -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
   .owl-prev,
   .owl-prev:hover {
     left: -15px;
     top: 30%;
+    -webkit-box-shadow: none;
     box-shadow: none;
     background: transparent;
+    -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
   .owl-theme .owl-nav [class*="owl-"]:hover {
@@ -527,11 +564,16 @@
     left: 220px;
   }
   .garantii-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .director {
+    -webkit-box-shadow: none;
     box-shadow: none;
     background-color: transparent;
+    -webkit-backdrop-filter: none;
     backdrop-filter: none;
     padding: 0;
     background-position: top 60px center;
@@ -556,6 +598,8 @@
     display: none;
   }
   .director__discription-lastblock {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .director__discription-last {
@@ -610,6 +654,9 @@
     margin-top: 50px;
   }
   .numbers {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .people h2 {
@@ -671,6 +718,8 @@
     border-radius: 7px;
   }
   .awards .popup-gallery img:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
 
@@ -724,7 +773,12 @@
     left: inherit;
   }
   .faq {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .faq-left {
@@ -784,16 +838,27 @@
     gap: 10px;
     max-width: 100%;
     max-height: inherit;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   .contact-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 48%;
     min-width: inherit;
     background: rgba(255, 255, 255, 0.054);
+    -webkit-box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
+      inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
     box-shadow: inset 36.6667px -36.6667px 36.6667px rgba(194, 194, 194, 0.054),
       inset -36.6667px 36.6667px 36.6667px rgba(255, 255, 255, 0.054);
+    -webkit-backdrop-filter: blur(69.6667px);
     backdrop-filter: blur(69.6667px);
     /* Note: backdrop-filter has minimal browser support */
 
