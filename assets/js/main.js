@@ -27,30 +27,52 @@ $('.reviews-button').click(function() {
     $('.video').removeClass('active');
     $('.reviews-button').addClass('reviews-button__active');
 });
-$('.new__btn').click(function() {
-    $('.new-business').addClass('active-box');
-    $('.active-business').removeClass('active-box');
-    $('.new__btn').addClass('active');
-    $('.active__btn').removeClass('active');
-});
-$('.active__btn').click(function() {
-    $('.active-business').addClass('active-box');
-    $('.new-business').removeClass('active-box');
-    $('.active__btn').addClass('active');
-    $('.new__btn').removeClass('active');
-});
+// $('.new__btn').click(function() {
+//     $('.new-business').addClass('active-box');
+//     $('.active-business').removeClass('active-box');
+//     $('.new__btn').addClass('active');
+//     $('.active__btn').removeClass('active');
+// });
+// $('.active__btn').click(function() {
+//     $('.active-business').addClass('active-box');
+//     $('.new-business').removeClass('active-box');
+//     $('.active__btn').addClass('active');
+//     $('.new__btn').removeClass('active');
+// });
 
 $('.rew__disc').click(function(){
     $('.reviews__hide').toggleClass('reviews__show')
 });
-
-
-$('.reasons-item').click(function(){
-    $('.reasons-item:hover > .reasons-item__disc').toggleClass('showitem');
+// $('.reasons-item').click(function(){
+//     $('.reasons-item > .reasons-item__disc').removeClass('showitem');
+//     console.log("gde")
+// });
+// $('.reasons-item').click(function(){
+//     if ($('.reasons-item > reasons-item__disc:not(.showitem)')){
+//     $(".reasons-item:hover > .reasons-item__disc:not(.showitem)").addClass("showitem");
+//     console.log("mda")
+//     } else {
+//         $('.reasons-item__disc').removeClass("showitem");
+//         console.log("mda2")
+//     ;}
+// });
+$('.reason__close').click(function(){
+    $('.reasons-item:hover > .reasons-item__disc').addClass('hide');
+    console.log("udalil")
 });
-$('.showitem').click(function() {
-    $('.showitem').removeClass('showitem');
+$(".reasons-item").mouseout(function(){
+    $(".reasons-item__disc").removeClass('hide');
+    console.log("mda2")
 });
+$('.partners__close').click(function(){
+    $('.partners__item:hover > .item__discription').addClass('hide');
+    console.log("udalil")
+});
+$(".partners__item").mouseout(function(){
+    $(".item__discription").removeClass('hide');
+    console.log("mda2")
+});
+
 // Скролл шапки
     let header = $('header');
     let hederHeight = header.height(); // вычисляем высоту шапки
@@ -68,6 +90,7 @@ $('.showitem').click(function() {
        })
       }
     });
+    
 
 });
 

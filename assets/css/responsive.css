@@ -26,11 +26,16 @@
     position: relative;
     left: 80px;
   }
-
-  @media (max-width: 1439px) {
-    main {
-      padding: 0 15px;
-    }
+}
+@media (max-width: 1439px) {
+  main {
+    padding: 0 15px;
+  }
+  .index-img-row {
+    left: inherit;
+  }
+  .main-image div {
+    right: 0px;
   }
   .index {
     overflow-y: auto;
@@ -43,17 +48,6 @@
   }
   .main-subtext {
     margin-bottom: 10px;
-  }
-  /* .main-image {
-    width: 40%;
-    margin-left: 0;
-  } */
-  .main-image div {
-    position: relative;
-    width: 55vh;
-    height: 80vh;
-    margin: 0;
-    background-size: cover;
   }
   .reviews {
     padding-top: 30px;
@@ -245,6 +239,13 @@
   .header-menu__dropitem a {
     font-size: 16px;
   }
+  .main-image div {
+    position: relative;
+    width: 55vh;
+    height: 80vh;
+    margin: 0;
+    background-size: cover;
+  }
 }
 @media (max-width: 1130px) {
   .reviews-rightbar {
@@ -368,13 +369,20 @@
   .main-list {
     margin-top: 212px;
   }
+  .index-img-row {
+    position: static;
+    left: inherit;
+  }
+  .main-image {
+    position: static;
+  }
   .main-image div {
     position: absolute;
     width: 200px;
     height: 210px;
     margin: 0;
     background-size: cover;
-    top: 100px;
+    top: 180px;
     left: calc(50% - 100px);
   }
   .main-list__item {
@@ -395,7 +403,7 @@
   .reviews-rightbar {
     min-width: inherit;
     right: inherit;
-    max-width: 96%;
+    max-width: 100%;
   }
   .video-box,
   .audio-box {
@@ -413,7 +421,7 @@
   }
   .video-box,
   .audio-box {
-    width: 98%;
+    width: 100%;
   }
   .video-box video {
     max-width: 100%;
@@ -473,7 +481,7 @@
   }
   .reviews-button {
     z-index: 10;
-    max-width: 98%;
+    max-width: 100%;
   }
   .reviews__form {
     padding: 10px;
@@ -497,6 +505,21 @@
   .reviews__hide {
     width: 98%;
     height: 100px;
+  }
+  .video-box .item {
+    position: relative;
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+  }
+  .video-box .item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
   }
   .rew__disc {
     top: 20px;
