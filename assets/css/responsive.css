@@ -398,7 +398,7 @@
     margin-top: 212px;
   }
   .index-img-row {
-    position: static;
+    position: absolute;
     left: inherit;
   }
   .main-image {
