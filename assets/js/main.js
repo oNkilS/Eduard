@@ -78,7 +78,7 @@ $(".partners__item").mouseout(function(){
     let hederHeight = header.height(); // вычисляем высоту шапки
      
     $(window).scroll(function() {
-      if($(this).scrollTop() > 100) {
+      if($(this).scrollTop() > 300) {
        header.addClass('fixed');
       } else {
        header.removeClass('fixed');
@@ -146,3 +146,8 @@ $('.dropdown').click(function(){
     $('.header-menu__drop').toggleClass('dropdown-open');
     $('.arrow').toggleClass('up');
 });
+
+// iphone fix
+$('body, html')
+    .animate({scrollTop: 0})
+    .scrollTop(0);
