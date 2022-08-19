@@ -138,7 +138,11 @@ $('.faq__close ').click(function(){
 $('.hamburger').click(function(){
     $('.header-menu').toggleClass('menu-active');
 });
-$('.arrow').click(function(){
+// $('.arrow').click(function(){
+//     $('.header-menu__drop').toggleClass('dropdown-open');
+//     $('.arrow').toggleClass('up');
+// });
+$('.dropdown').click(function(){
     $('.header-menu__drop').toggleClass('dropdown-open');
     $('.arrow').toggleClass('up');
 });
