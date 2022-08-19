@@ -88,6 +88,7 @@
   }
   .numbers__top {
     font-size: 100px;
+    margin-bottom: 0;
   }
   .company,
   .people,
@@ -124,45 +125,17 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  .faq {
-    padding-top: 40px;
-  }
-  .faq-left {
-    width: 30%;
-  }
-  .faq-right {
-    width: 70%;
-  }
-  .faq-item__disc {
-    min-height: auto;
-    max-height: 100%;
-  }
-  .faq-item__adv {
-    min-height: auto;
-  }
-  .faq-item,
-  .faq-item__quest {
-    font-size: 16px;
-    padding: 18px 11px;
-  }
-  .contact {
-    margin-top: 40px;
-  }
-  .earth-box {
-    top: 220px;
-    right: 0px;
-  }
-  .contact-list,
-  .contact__title {
-    position: relative;
-    z-index: 11;
-  }
 }
 @media (min-width: 1330px) {
   .reasons-item:nth-child(5n) .reasons-item__disc {
     width: 240px;
     height: 508px;
     top: 0;
+  }
+  .contact-list,
+  .contact__title {
+    position: relative;
+    z-index: 11;
   }
 }
 @media (max-width: 1330px) {
@@ -173,6 +146,18 @@
     width: 100%;
     height: 508px;
     top: 0;
+  }
+  .contact {
+    margin-top: 40px;
+  }
+  .earth-box {
+    top: 220px;
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 1300px) {
+  header.fixed {
+    left: 0;
   }
 }
 @media (max-width: 1250px) {
@@ -257,6 +242,30 @@
 @media (max-width: 1130px) {
   .reviews-rightbar {
     min-width: 60%;
+  }
+  .faq {
+    padding-top: 40px;
+  }
+  .faq-left {
+    width: 30%;
+  }
+  .faq-right {
+    width: 70%;
+  }
+  .faq-item__disc {
+    min-height: auto;
+    max-height: 100%;
+  }
+  .faq-item__adv {
+    min-height: auto;
+  }
+  .faq-item,
+  .faq-item__quest {
+    font-size: 16px;
+    padding: 18px 11px;
+  }
+  .earth-box {
+    transform: scale(0.5);
   }
 }
 @media (max-width: 1080px) {
@@ -805,6 +814,7 @@
   }
   .item__adv-button {
     max-width: 100%;
+    min-width: 51%;
   }
   .faq-item__disc h2 {
     text-align: left;
@@ -815,6 +825,9 @@
     font-size: 15px;
     line-height: 125%;
     text-align: left;
+  }
+  .contact-page .content {
+    overflow-x: hidden;
   }
   .contact__title {
     font-weight: 400;
@@ -842,6 +855,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    justify-content: space-between;
   }
   .contact-list__item {
     display: -webkit-box;
@@ -885,5 +899,6 @@
   .earth-box {
     top: 185px;
     left: calc(50% - 175px);
+    transform: scale(1);
   }
 }

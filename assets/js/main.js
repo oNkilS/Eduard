@@ -78,16 +78,10 @@ $(".partners__item").mouseout(function(){
     let hederHeight = header.height(); // вычисляем высоту шапки
      
     $(window).scroll(function() {
-      if($(this).scrollTop() > 1) {
+      if($(this).scrollTop() > 100) {
        header.addClass('fixed');
-       $('body').css({
-          'paddingTop': hederHeight+'px' // делаем отступ у body, равный высоте шапки
-       });
       } else {
        header.removeClass('fixed');
-       $('body').css({
-        'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
-       })
       }
     });
     
