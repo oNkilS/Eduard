@@ -884,7 +884,7 @@ div .reviews__title {
   /* background-position-y: -60px;
   background-size: cover; */
 }
-@media screen and (min-device-width: 1000px) and (max-device-width: 1500px) {
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
   .bg1 {
     background-image: url(assets/img/bg1.png);
     position: absolute;
@@ -897,10 +897,10 @@ div .reviews__title {
     background-position: center;
     background-size: cover;
   }
-  /* .bg2 {
+  .bg2 {
     background-image: url(assets/img/bg2.png);
     position: absolute;
-    top: 2050px;
+    top: 2140px;
     width: 100%;
     height: 810px;
     left: 0;
@@ -908,7 +908,7 @@ div .reviews__title {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  } */
+  }
   .bg3 {
     background-image: url(assets/img/bg3.png);
     position: absolute;
@@ -947,10 +947,10 @@ div .reviews__title {
     background-position: center;
     background-size: cover;
   }
-  /* .bg2 {
-    background-image: url(assets/img/bg2.png);
+  .bg2 {
+    background-image: url(assets/img/bg2-1920.png);
     position: absolute;
-    top: 2050px;
+    top: 2180px;
     width: 100%;
     height: 810px;
     left: 0;
@@ -958,7 +958,7 @@ div .reviews__title {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  } */
+  }
   .bg3 {
     background-image: url(assets/img/bg3-1920.png);
     position: absolute;
