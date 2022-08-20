@@ -481,7 +481,7 @@ main {
 }
 .intro {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .intro__media {
   position: absolute;

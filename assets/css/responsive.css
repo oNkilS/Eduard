@@ -480,6 +480,9 @@
     padding: 20px 10px;
     font-size: 14px;
   }
+  .intro {
+    height: 100%;
+  }
   .intro__media {
     min-height: auto;
   }
@@ -990,7 +993,7 @@
     top: 50px;
   }
   .earth-box {
-    top: 185px;
+    top: 200px;
     left: calc(50% - 175px);
     transform: scale(1);
   }
