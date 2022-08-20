@@ -484,7 +484,7 @@
     min-height: auto;
   }
   .reviews-leftbar {
-    padding-top: 20px;
+    padding-top: 0px;
     max-width: 100%;
   }
   .reviews-rightbar {
@@ -584,6 +584,7 @@
   .reviews-button {
     z-index: 10;
     max-width: 100%;
+    padding: 20px 10px;
   }
   .reviews__form {
     margin-top: -10px;
