@@ -168,6 +168,9 @@
     width: 100%;
     height: auto;
   }
+  .reasons-item__disc {
+    padding: 20px;
+  }
 }
 @media (max-width: 1300px) {
   header.fixed {
@@ -709,7 +712,7 @@
     right: 0;
     left: inherit;
   }
-  .reasons-item:nth-child(4n) .reasons-item__disc {
+  .reasons-item:nth-child(5n) .reasons-item__disc {
     width: calc(200% + 13px);
     height: auto;
   }
