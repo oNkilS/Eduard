@@ -632,7 +632,7 @@
     background: transparent !important;
   }
   .rew__disc {
-    top: 20px;
+    top: 0px;
     right: inherit;
     left: 210px;
   }
