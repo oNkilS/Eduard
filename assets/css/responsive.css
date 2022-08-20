@@ -21,6 +21,12 @@
 .mobile-menu {
   display: none;
 }
+.mobile {
+  display: none;
+}
+.people-mobile {
+  display: none;
+}
 @media (max-width: 1555px) {
   .partners__item:nth-child(4) > .item__discription,
   .partners__item:nth-child(8) > .item__discription,
@@ -302,6 +308,9 @@
   .mobile-menu__logo {
     margin-left: -14px;
   }
+  .mobile {
+    display: flex;
+  }
   nav {
     height: 0;
   }
@@ -466,6 +475,12 @@
   .active-box {
     position: relative;
   }
+  .audio-box {
+    top: -500px;
+  }
+  .audio-box.active-box {
+    top: 0;
+  }
   .reviews {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -582,10 +597,13 @@
     border-width: 0;
     outline-width: 0;
   }
+  .owl-theme .owl-nav [class*="owl-"] {
+    background: transparent !important;
+  }
   .rew__disc {
     top: 20px;
     right: inherit;
-    left: 220px;
+    left: 210px;
   }
   .garantii-row {
     -webkit-box-orient: vertical;
@@ -632,7 +650,7 @@
     line-height: 120%;
     letter-spacing: 0.03em;
     text-transform: inherit;
-    text-align: left;
+    text-align: center;
   }
   .director .director__discription-last br {
     display: block;
@@ -640,6 +658,9 @@
   .director__discription-img {
     width: 123px;
     height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
   }
   .company__title {
     font-size: 28px;
@@ -683,16 +704,31 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .numbers__bottom {
+    font-size: 16px;
+    margin-top: -5px;
+  }
   .people h2 {
     font-size: 28px;
     line-height: 100%;
+    margin-bottom: 15px;
   }
   .people {
     padding: 50px 0;
+    display: none;
+  }
+  .people-mobile {
+    display: block;
   }
   .people__item {
     width: inherit;
   }
+  .order1 {
+    order: 1;
+  }
+  /* .people .owl-item {
+    width: 183px !important;
+  } */
   .garantii-row {
     text-align: center;
   }
@@ -727,9 +763,19 @@
   .awards__title {
     font-size: 28px;
     line-height: 100%;
+    margin-bottom: 15px;
   }
   .awards {
-    padding: 20px 40px;
+    padding: 20px 13px;
+  }
+  .owl-slider__nav {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    justify-content: center;
+    margin-bottom: 15px;
   }
   section.awards div.owl-dots {
     margin-top: 20px;
@@ -852,6 +898,7 @@
     font-family: "Golos";
     font-style: normal;
     text-transform: inherit;
+    text-align: center;
   }
   .earth-hover {
     display: none;

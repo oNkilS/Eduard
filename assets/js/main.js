@@ -112,6 +112,12 @@ $('.faq__close ').click(function(){
     $('.faq-item').removeClass('faq-item__hide')
     $('.item__adv-button').removeClass('faq__actives')
 })
+$(function(){
+    $(".faq__close").bind('click', function(e){
+        e.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 400);    
+    });
+});
 
 // menu
   /**

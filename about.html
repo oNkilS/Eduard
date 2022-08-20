@@ -19,7 +19,7 @@
     <div class="content">
         <header>
             <div class="mobile-menu">
-                <button class="hamburger hamburger--emphatic active" type="button">
+                <button class="hamburger hamburger--emphatic active animate__pulse animate__animated animate__infinite infinite infinite" type="button">
                     <span class="hamburger-box">
                       <span class="hamburger-inner"></span>
                     </span>
@@ -241,6 +241,13 @@
                         <img src="assets/img/X.svg" alt="Кнопка закрыть" class="reason__close">
                         </div>
                     </div>
+                    <div class="reasons-item mobile">
+                        <img src="assets/img/d5.svg" alt="Иконка причины">
+                        <div class="reasons-item__text">Всегда на связи</div>
+                        <div class="reasons-item__disc">У меня более 9 лет опыта в данной сфере и более 200 реализованных проектов за плечами. Это всегда было основным направлением, ИП зарегистрировано в 2014 году и еще 2 года я работал без ИП. Дату регистрации легко проверить. (ИП Железнов Эдуард Сергеевич) Благодаря колоссальному опыту будут исключены разного рода ошибки, фатальность которых может быть критична. 
+                        <img src="assets/img/X.svg" alt="Кнопка закрыть" class="reason__close">
+                        </div>
+                    </div>
                     
                 </div>
             </section>
@@ -263,7 +270,8 @@
             </section>
             <section class="people">
                 <h2 class="director__title animate__animated animate__fadeIn wow">Ключевые люди компании</h2>
-                <div class="people-row owl-carousel owl-theme animate__animated animate__fadeIn wow">
+                <div class="mobile owl-slider__nav animate__animated animate__slideInLeft animate__infinite infinite wow">Листай →</div>
+                <div class="people-row owl-carousel owl-theme slide-one animate__animated animate__fadeIn wow">
                     <div class="people__item">
                         <img src="assets/img/p1.webp" alt="Александр">
                         <h3>Александр</h3>
@@ -274,7 +282,7 @@
                         <h3>Мария</h3>
                         <p>руководит помощниками</p>
                     </div>
-                    <div class="people__item">
+                    <div class="people__item order1">
                         <img src="assets/img/p3.webp" alt="Эдуард">
                         <h3>Эдуард</h3>
                         <p>собственник компании</p>
@@ -288,6 +296,42 @@
                         <img src="assets/img/p5.webp" alt="Алексей">
                         <h3>Алексей</h3>
                         <p>король интернет рекламы</p>
+                    </div>
+                    <div class="people__item">
+                        <img src="assets/img/p6.webp" alt="Марина">
+                        <h3>Марина</h3>
+                        <p>соц. сети, crm, марафон</p>
+                    </div>
+                </div>
+            </section>
+            <section class="people people-mobile">
+                <h2 class="director__title animate__animated animate__fadeIn wow">Ключевые люди компании</h2>
+                <div class="mobile owl-slider__nav animate__animated animate__slideInLeft animate__infinite infinite wow">Листай →</div>
+                <div class="people-row owl-carousel owl-theme slide-one animate__animated animate__fadeIn wow">
+                    <div class="people__item">
+                        <img src="assets/img/p1.webp" alt="Александр">
+                        <h3>Александр</h3>
+                        <p>царь программистов</p>
+                    </div>
+                    <div class="people__item">
+                        <img src="assets/img/p2.webp" alt="Мария">
+                        <h3>Мария</h3>
+                        <p>руководит помощниками</p>
+                    </div>
+                    <div class="people__item">
+                        <img src="assets/img/p4.webp" alt="Семён">
+                        <h3>Семён</h3>
+                        <p>отвечает за дизайнеров</p>
+                    </div>
+                    <div class="people__item">
+                        <img src="assets/img/p5.webp" alt="Алексей">
+                        <h3>Алексей</h3>
+                        <p>король интернет рекламы</p>
+                    </div>
+                    <div class="people__item order1">
+                        <img src="assets/img/p3.webp" alt="Эдуард">
+                        <h3>Эдуард</h3>
+                        <p>собственник компании</p>
                     </div>
                     <div class="people__item">
                         <img src="assets/img/p6.webp" alt="Марина">
@@ -316,8 +360,9 @@
             </section>
             <section class="awards">
                 <h2 class="awards__title animate__animated animate__fadeIn wow">Сертификаты/грамоты/награды</h2>
+                <div class="mobile owl-slider__nav animate__animated animate__slideInLeft animate__infinite infinite wow">Листай →</div>
                 <div class="awards-row">
-                    <div class="popup-gallery owl-carousel owl-theme animate__animated animate__fadeIn wow">
+                    <div class="popup-gallery owl-carousel owl-theme slide-two animate__animated animate__fadeIn wow">
                         <a href="assets/img/img_big1.png" data-effect="mfp-zoom-in"><img src="assets/img/img_big1.jpg" alt="image" /></a>
                         <a href="assets/img/img_big2.png" data-effect="mfp-zoom-in"><img src="assets/img/img_big2.jpg" alt="image" /></a>
                         <a href="assets/img/img_big3.png" data-effect="mfp-zoom-in"><img src="assets/img/img_big3.jpg" alt="image" /></a>
@@ -435,6 +480,10 @@
                     </div>
                 </div>
             </section>
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="bg3"></div>
+        <div class="bg4"></div>
         </main>
     </div>
 
@@ -455,16 +504,22 @@ new WOW().init();
 <script src="assets/js/owl.carousel.min.js"></script>
 <script>
 if(window.matchMedia('(max-width: 1000px)').matches) {
-    $('.owl-carousel').owlCarousel({
+    $('.slide-one').owlCarousel({
     loop:true,
-    nav:true,
     items: 1,
     lazyLoad:true,
-    video: true,
+    stagePadding: 65,
     navText: ["<img src='assets/img/prev.png'>", "<img src='assets/img/next.png'>"]
 });
 }
-
+if(window.matchMedia('(max-width: 1000px)').matches) {
+    $('.slide-two').owlCarousel({
+    loop:true,
+    items: 1,
+    lazyLoad:true,
+    navText: ["<img src='assets/img/prev.png'>", "<img src='assets/img/next.png'>"]
+});
+}
 </script>
 <script>
 $(document).ready(function() {
