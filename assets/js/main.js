@@ -27,6 +27,12 @@ $('.reviews-button').click(function() {
     $('.video').removeClass('active');
     $('.reviews-button').addClass('reviews-button__active');
 });
+if(window.matchMedia('(max-width: 1000px)').matches) {
+    $('.reviews-button').click(function() {
+        $('.audio').hide();
+        $('.video').hide();
+    });
+};
 // $('.new__btn').click(function() {
 //     $('.new-business').addClass('active-box');
 //     $('.active-business').removeClass('active-box');
