@@ -963,4 +963,7 @@
     left: calc(50% - 175px);
     transform: scale(1);
   }
+  body .mfp-counter {
+    display: none;
+  }
 }
