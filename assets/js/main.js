@@ -74,16 +74,16 @@ $(".partners__item").mouseout(function(){
 });
 
 // Скролл шапки
-    let header = $('header');
-    let hederHeight = header.height(); // вычисляем высоту шапки
+    // let header = $('header');
+    // let hederHeight = header.height(); // вычисляем высоту шапки
      
-    $(window).scroll(function() {
-      if($(this).scrollTop() > 300) {
-       header.addClass('fixed');
-      } else {
-       header.removeClass('fixed');
-      }
-    });
+    // $(window).scroll(function() {
+    //   if($(this).scrollTop() > 300) {
+    //    header.addClass('fixed');
+    //   } else {
+    //    header.removeClass('fixed');
+    //   }
+    // });
     
 
 });

@@ -346,6 +346,9 @@ body .active,
 .mobile-index__img {
   display: none;
 }
+main {
+  padding-top: 100px;
+}
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1652,6 +1655,8 @@ header {
 /* контакты */
 .contact-page .content {
   position: relative;
+  overflow-x: hidden;
+  min-height: 90vh;
 }
 .contact__earth {
   /* width: 450px;
