@@ -894,7 +894,7 @@ div .reviews__title {
     background-position: center;
     background-size: cover;
   }
-  .bg2 {
+  /* .bg2 {
     background-image: url(assets/img/bg2.png);
     position: absolute;
     top: 2050px;
@@ -905,7 +905,7 @@ div .reviews__title {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+  } */
   .bg3 {
     background-image: url(assets/img/bg3.png);
     position: absolute;
